@@ -166,178 +166,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/fl-bigmug-line.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/fl-bigmug-line.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/fl-bigmug-line.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/hero_bg_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/hero_bg_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/hero_bg_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/license.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17__Default_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/aos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/bootstrap-datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/fl-bigmug-line.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/_flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/flaticon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/license/license.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo-files/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo-files/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/selection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/hero_bg_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/hero_bg_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/hero_bg_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/img_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/img_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/person_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/person_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/person_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/images/person_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/items.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/aos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery.stellar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/_site-base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/_site-blocks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/_site-navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/接码/html/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="123" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -588,7 +417,7 @@
       <updated>1578144182494</updated>
       <workItem from="1594190663236" duration="995000" />
       <workItem from="1594191678288" duration="3741000" />
-      <workItem from="1594202411832" duration="3530000" />
+      <workItem from="1594202411832" duration="3967000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578147200656</created>
@@ -702,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591630831315</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="123">
+      <created>1594206494809</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594206494809</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -745,7 +581,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1867" y="266" key="FileChooserDialogImpl" timestamp="1594203190501">
@@ -756,18 +593,18 @@
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="1842" y="371" key="Github.CreatePullRequestDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594204544219" />
-    <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog" timestamp="1594206086399">
+    <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog" timestamp="1594206167774">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206086399" />
+    <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206167774" />
     <state x="1482" y="149" key="SettingsEditor" timestamp="1594206124610">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="1482" y="149" key="SettingsEditor/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206124610" />
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1594205925849">
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1594206520078">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594205925849" />
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206520078" />
     <state x="1861" y="291" key="git4idea.merge.GitPullDialog" timestamp="1594192215462">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
