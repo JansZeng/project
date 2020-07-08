@@ -34,23 +34,6 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:Djanggo" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:Djanggo" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:BlogAPI-master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:config" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -183,29 +166,264 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24ea191f-1f0a-4619-bf4e-6a09e5d830a9" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码/image/code/-红包码.png" afterDir="false" />
+    <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/fl-bigmug-line.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/fl-bigmug-line.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/fl-bigmug-line.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/hero_bg_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/hero_bg_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/hero_bg_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/img_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/license.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/person_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17_[Default]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_7_8_18_17__Default_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/fl-bigmug-line.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/_flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/flaticon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/flaticon/license/license.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo-files/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo-files/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/selection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/fonts/icomoon/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/hero_bg_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/hero_bg_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/hero_bg_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/img_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/img_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/img_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/img_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/person_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/person_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/person_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/images/person_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/items.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery.countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/jquery.stellar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/_site-base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/_site-blocks.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/_site-navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码/html/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码/spider.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/project$.coverage" NAME="作业 Coverage Results" MODIFIED="1590911664224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$123__1_.coverage" NAME="123 (1) Coverage Results" MODIFIED="1590297093914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$TrieData.coverage" NAME="TrieData Coverage Results" MODIFIED="1590826416802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/途虎养车" />
+    <SUITE FILE_PATH="coverage/project$TrieData__1_.coverage" NAME="TrieData (1) Coverage Results" MODIFIED="1590837936410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/途虎养车/轮胎数据" />
+    <SUITE FILE_PATH="coverage/project$koubei_autohome.coverage" NAME="koubei_autohome Coverage Results" MODIFIED="1591521761954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑" />
+    <SUITE FILE_PATH="coverage/project$111111.coverage" NAME="111111 Coverage Results" MODIFIED="1590832516477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/途虎养车/轮胎数据" />
+    <SUITE FILE_PATH="coverage/project$spider.coverage" NAME="spider Coverage Results" MODIFIED="1591613582221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/转账码生成/银行卡转账码" />
+    <SUITE FILE_PATH="coverage/project$Sqlite_Demo__1_.coverage" NAME="Sqlite_Demo (1) Coverage Results" MODIFIED="1591198098810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基类模块/模块常用语法" />
+    <SUITE FILE_PATH="coverage/project$model_koubei.coverage" NAME="model_koubei Coverage Results" MODIFIED="1591452484324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取指定车型口碑" />
+    <SUITE FILE_PATH="coverage/project$__.coverage" NAME="全系车型参数(包含历史车型) Coverage Results" MODIFIED="1591503566971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/全系车型数据(包含停售车型)" />
+    <SUITE FILE_PATH="coverage/project$1111111.coverage" NAME="1111111 Coverage Results" MODIFIED="1591426014565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取指定车型口碑" />
+    <SUITE FILE_PATH="coverage/project$1111111__1_.coverage" NAME="1111111 (1) Coverage Results" MODIFIED="1591504275881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑" />
+    <SUITE FILE_PATH="coverage/project$Twisted_Trial_for__test.coverage" NAME="Twisted Trial for 支付接口调用.test Coverage Results" MODIFIED="1590302675278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$44444.coverage" NAME="44444 Coverage Results" MODIFIED="1591108646500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取指定车型口碑" />
+    <SUITE FILE_PATH="coverage/project$1.coverage" NAME="作业1 Coverage Results" MODIFIED="1590913078838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$Twisted_Trial_in_777_py.coverage" NAME="Twisted Trial in 777.py Coverage Results" MODIFIED="1590302747805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$123.coverage" NAME="123 Coverage Results" MODIFIED="1590241299183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码" />
+    <SUITE FILE_PATH="coverage/project$5555.coverage" NAME="5555 Coverage Results" MODIFIED="1590773047000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据" />
+    <SUITE FILE_PATH="coverage/project$DatabaseQuery.coverage" NAME="DatabaseQuery Coverage Results" MODIFIED="1591444668617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取指定车型口碑" />
+    <SUITE FILE_PATH="coverage/project$5_6.coverage" NAME="5-6 Coverage Results" MODIFIED="1593485777896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/代写" />
+    <SUITE FILE_PATH="coverage/project$Sqlite_Demo.coverage" NAME="Sqlite_Demo Coverage Results" MODIFIED="1591183192660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基类模块" />
+    <SUITE FILE_PATH="coverage/project$test.coverage" NAME="test Coverage Results" MODIFIED="1578146862136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$11111111.coverage" NAME="11111111 Coverage Results" MODIFIED="1590836862585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/途虎养车/轮胎数据" />
+    <SUITE FILE_PATH="coverage/project$spider__1_.coverage" NAME="spider (1) Coverage Results" MODIFIED="1591630080769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码" />
+    <SUITE FILE_PATH="coverage/project$Twisted_Trial_in__py.coverage" NAME="Twisted Trial in 支付接口调用.py Coverage Results" MODIFIED="1590302664974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>seriesid</find>
+      <find>speclist</find>
+      <find>bagtypeitems</find>
+      <find>天窗</find>
+      <find>有限责任公司（法人独资）</find>
+      <find>get_car_parser</find>
+      <find>9</find>
+      <find>3170</find>
+      <find>奥迪A6</find>
+      <find>3</find>
+      <find>1</find>
+      <find>4105</find>
+      <find>2223971</find>
+      <find>1836481</find>
+      <find>1644629</find>
+      <find>口碑数据获取完成</find>
+      <find>车型口碑ID列表获取完成</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="chenzijie-chenxiaoli-chentong" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="project" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
       <set>
-        <option value="https://github.com.cnpmjs.org/chenzijie-chenxiaoli-chentong/project" />
+        <option value="https://github.com/chenzijie-chenxiaoli-chentong/project.git" />
+        <option value="https://github.com/chenzijie-chenxiaoli-chentong/pycharm-project.git" />
       </set>
     </option>
   </component>
-  <component name="ProjectId" id="1dXvCS2SYuWUM1m6hoKb4Df12lj" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1eORTQkw3Z1Kv3jKoAWtRMIjmR0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -213,18 +431,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.spider">
-    <configuration name="google_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="X:\project\project\基类模块\模块常用语法\数据库相关" />
+      <recent name="X:\project\project\小爬虫\汽车之家\口碑数据\获取全系车型口碑" />
+      <recent name="X:\project\project\基类模块\模块常用语法" />
+      <recent name="X:\project\project\小爬虫" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="X:\project\project\小爬虫\汽车之家\口碑数据\获取全系车型口碑" />
+      <recent name="X:\project\project\小爬虫\汽车之家\口碑数据" />
+      <recent name="X:\project\project\政务平台\2号\spider\code" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.5-6">
+    <configuration name="1111111 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,12 +457,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/小爬虫/Google搜索" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/小爬虫/Google搜索/google_search.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑/1111111.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,7 +471,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="5-6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,12 +479,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="/usr/local/lib/python3.7/site-packages/selenium/webdriver/common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/代写" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="/usr/local/lib/python3.7/site-packages/selenium/webdriver/common/service.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/代写/5-6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,7 +493,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="spider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="koubei_autohome" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑/koubei_autohome.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="spider (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,58 +537,196 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/小爬虫/转账码生成/银行卡转账码" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/小爬虫/转账码生成/银行卡转账码/spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.koubei_autohome" />
+      <item itemvalue="Python.1111111 (1)" />
+      <item itemvalue="Python.spider" />
+      <item itemvalue="Python.spider (1)" />
+      <item itemvalue="Python.5-6" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.5-6" />
+        <item itemvalue="Python.spider (1)" />
         <item itemvalue="Python.spider" />
-        <item itemvalue="Python.google_search" />
-        <item itemvalue="Python.service" />
+        <item itemvalue="Python.koubei_autohome" />
+        <item itemvalue="Python.1111111 (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="24ea191f-1f0a-4619-bf4e-6a09e5d830a9" name="Default Changelist" comment="" />
-      <created>1592584125024</created>
+      <changelist id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="" />
+      <created>1578144182494</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592584125024</updated>
-      <workItem from="1592584126550" duration="1812000" />
-      <workItem from="1592645814708" duration="88000" />
-      <workItem from="1592703198246" duration="3745000" />
+      <updated>1578144182494</updated>
+      <workItem from="1594190663236" duration="995000" />
+      <workItem from="1594191678288" duration="3741000" />
+      <workItem from="1594202411832" duration="3530000" />
     </task>
     <task id="LOCAL-00001" summary="1">
-      <created>1592584273703</created>
+      <created>1578147200656</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1592584273703</updated>
+      <updated>1578147200656</updated>
     </task>
     <task id="LOCAL-00002" summary="1">
-      <created>1592584346175</created>
+      <created>1578814812211</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1592584346175</updated>
+      <updated>1578814812211</updated>
     </task>
     <task id="LOCAL-00003" summary="1">
-      <created>1592633333768</created>
+      <created>1588176778614</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1592633333769</updated>
+      <updated>1588176778614</updated>
     </task>
     <task id="LOCAL-00004" summary="1">
-      <created>1592633353757</created>
+      <created>1589027450270</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1592633353757</updated>
+      <updated>1589027450270</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1">
+      <created>1590151807993</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590151807993</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1">
+      <created>1590152195539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590152195539</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1">
+      <created>1590242099391</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590242099391</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1">
+      <created>1590283913384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590283913384</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1">
+      <created>1590314811349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590314811349</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1">
+      <created>1590682978620</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590682978620</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1">
+      <created>1590937875007</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590937875007</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1">
+      <created>1591110460817</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1591110460817</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1">
+      <created>1591198445421</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591198445421</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1">
+      <created>1591532526523</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1591532526523</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1">
+      <created>1591536368418</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1591536368418</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1">
+      <created>1591630831315</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1591630831315</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Twisted_Trial_for_支付接口调用_test - 2020.05.24 at 14h 44m 37s.xml">
+      <configuration name="Twisted Trial for 支付接口调用.test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_777_py - 2020.05.24 at 14h 44m 10s.xml">
+      <configuration name="Twisted Trial in 777.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_777_py - 2020.05.24 at 14h 45m 49s.xml">
+      <configuration name="Twisted Trial in 777.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_支付接口调用_py - 2020.05.24 at 14h 39m 55s.xml">
+      <configuration name="Twisted Trial in 支付接口调用.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_支付接口调用_py - 2020.05.24 at 14h 40m 28s.xml">
+      <configuration name="Twisted Trial in 支付接口调用.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_支付接口调用_py - 2020.05.24 at 14h 41m 08s.xml">
+      <configuration name="Twisted Trial in 支付接口调用.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_支付接口调用_py - 2020.05.24 at 14h 44m 27s.xml">
+      <configuration name="Twisted Trial in 支付接口调用.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -363,52 +748,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1592711116430">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1867" y="266" key="FileChooserDialogImpl" timestamp="1594203190501">
+      <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592711116430" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1592711116429">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1867" y="266" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594203190501" />
+    <state x="1842" y="371" key="Github.CreatePullRequestDialog" timestamp="1594204544219">
+      <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1592711116429" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1592711116429">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1842" y="371" key="Github.CreatePullRequestDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594204544219" />
+    <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog" timestamp="1594206086399">
+      <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1592711116429" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1592711116430">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206086399" />
+    <state x="1482" y="149" key="SettingsEditor" timestamp="1594206124610">
+      <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1592711116430" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1592633371390">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1482" y="149" key="SettingsEditor/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206124610" />
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1594205925849">
+      <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592633371390" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1592633371389">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594205925849" />
+    <state x="1861" y="291" key="git4idea.merge.GitPullDialog" timestamp="1594192215462">
+      <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1592633371389" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1592633371389">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1861" y="291" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594192215462" />
+    <state x="2036" y="295" key="svn.repositoryBrowser" timestamp="1594203243628">
+      <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1592633371389" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1592633371390">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1592633371390" />
-    <state x="221" y="42" key="SettingsEditor" timestamp="1592626993502">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="221" y="42" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1592626993502" />
-    <state x="221" y="60" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1592584177221" />
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1592633355655">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592633355655" />
-    <state x="320" y="161" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1592584348364" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project$google_search.coverage" NAME="google_search Coverage Results" MODIFIED="1592627370759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/Google搜索" />
-    <SUITE FILE_PATH="coverage/project$spider.coverage" NAME="spider Coverage Results" MODIFIED="1592711116421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/转账码生成/余额转账码" />
-    <SUITE FILE_PATH="coverage/project$service.coverage" NAME="service Coverage Results" MODIFIED="1592626654735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/local/lib/python3.7/site-packages/selenium/webdriver/common" />
+    <state x="2036" y="295" key="svn.repositoryBrowser/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594203243628" />
   </component>
 </project>
