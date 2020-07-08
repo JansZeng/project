@@ -15,3 +15,8 @@ https://koubeiipv6.app.autohome.com.cn/autov9.13.0/alibi/NewEvaluationInfo.ashx?
 
 
 这是个测试
+
+
+com.ss.android.ugc.aweme:id/ac0
+com.ss.android.ugc.aweme:id/eou
+//androidx.recyclerview.widget.RecyclerView[@resource-id="com.ss.android.ugc.aweme:id/eou"]/android.widget.FrameLayout/android.widget.TextView
