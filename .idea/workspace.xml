@@ -166,7 +166,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="4444" />
+    <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="4444">
+      <change beforePath="$PROJECT_DIR$/快手直播数据/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/快手直播数据/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -417,7 +419,7 @@
       <updated>1578144182494</updated>
       <workItem from="1594190663236" duration="995000" />
       <workItem from="1594191678288" duration="3741000" />
-      <workItem from="1594202411832" duration="4741000" />
+      <workItem from="1594202411832" duration="5117000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578147200656</created>
@@ -545,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594206652894</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="4444">
+      <created>1594207587234</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1594207587234</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
