@@ -233,7 +233,7 @@ if __name__ == '__main__':
     # spider.run()
 
     # 红包码制作 2020.06.21
-    spider.code_generate(f'http://mrw.so/6cmIDw')
+    spider.code_generate(f'http://mrw.so/6qJabC')
     # 图片处理
     image_process = Picture()
     image_process.text = '-红包码'

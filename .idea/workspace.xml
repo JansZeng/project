@@ -166,7 +166,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="123" />
+    <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="4444" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -417,7 +417,7 @@
       <updated>1578144182494</updated>
       <workItem from="1594190663236" duration="995000" />
       <workItem from="1594191678288" duration="3741000" />
-      <workItem from="1594202411832" duration="3967000" />
+      <workItem from="1594202411832" duration="4741000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578147200656</created>
@@ -538,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594206494809</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="4444">
+      <created>1594206652894</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594206652894</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -582,7 +589,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="4444" />
+    <option name="LAST_COMMIT_MESSAGE" value="4444" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1867" y="266" key="FileChooserDialogImpl" timestamp="1594203190501">
@@ -601,10 +609,10 @@
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="1482" y="149" key="SettingsEditor/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206124610" />
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1594206520078">
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1594206654975">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206520078" />
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206654975" />
     <state x="1861" y="291" key="git4idea.merge.GitPullDialog" timestamp="1594192215462">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>

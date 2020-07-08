@@ -378,8 +378,8 @@ class Spider:
         # 根据坐标位置拷贝
         im = Image.open('./code/phone_page.png')
         if pre_type == 1:
-            phone_image = im.crop((435, 220, 565, 250))
-            number_image = im.crop((1325, 270, 1525, 300))
+            phone_image = im.crop((435, 250, 560, 275))
+            number_image = im.crop((1330, 347, 1525, 374))
         elif pre_type == 2:
             phone_image = im.crop((435, 315, 565, 345))
             number_image = im.crop((1325, 220, 1525, 250))
