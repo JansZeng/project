@@ -48,6 +48,16 @@
     山东理工大学：http://pypi.sdutlinux.org/
     豆瓣：http://pypi.douban.com/simple/
 
+    win10修改系统默认pip源
+    C:\Users\Default\AppData\Roaming下新建pip.ini文件
+    [global]
+    timeout = 60000
+    index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+    [install]
+    use-mirrors = true
+    mirrors = https://pypi.tuna.tsinghua.edu.cn
+
+
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r 环境配置文件
 
     # windows下pip安装包权限的问题 --user

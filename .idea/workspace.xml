@@ -34,7 +34,7 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:config" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Djanggo" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
@@ -42,124 +42,7 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:spider" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:小爬虫" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:小爬虫" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:转账码生成" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:小爬虫" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:转账码生成" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:余额转账码" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:小爬虫" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:转账码生成" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:余额转账码" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:config" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:小爬虫" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:连连看" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:小爬虫" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:连连看" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:config" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:微信" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:微信" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:config" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:政务平台" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:政务平台" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:spider" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:潭州课堂" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:潭州课堂" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:Djanggo框架" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:潭州课堂" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:Djanggo框架" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Djanggo" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:BlogAPI-master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
@@ -167,11 +50,170 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="11.8.0">
+      <change afterPath="$PROJECT_DIR$/接码平台/AccessCode/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/AccessCode/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/AccessCode/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/AccessCode/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/AccessCode/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/AccessCode/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/AccessCode/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/templates/movie_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/接码平台/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/接码平台/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/接码平台/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接码平台/接码平台/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/接码/html/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码/html/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/接码/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/接码/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/接码/html/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/接码/html/items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基类模块/模块常用语法/appium+selenium/Appium环境配置.txt" beforeDir="false" afterPath="$PROJECT_DIR$/基类模块/模块常用语法/appium+selenium/Appium环境配置.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/aos.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/aos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/bootstrap-datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/bootstrap-datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/fl-bigmug-line.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/fl-bigmug-line.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/magnific-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/owl.carousel.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/owl.theme.default.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.eot" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/bigmug-line/fl-bigmug-line.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.svg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/bigmug-line/fl-bigmug-line.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/bigmug-line/fl-bigmug-line.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/bigmug-line/fl-bigmug-line.woff" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/bigmug-line/fl-bigmug-line.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/Flaticon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/Flaticon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/Flaticon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/Flaticon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/Flaticon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/_flaticon.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/_flaticon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/_flaticon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/_flaticon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/flaticon.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/flaticon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/font/flaticon.html" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/font/flaticon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/flaticon/license/license.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/flaticon/license/license.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo-files/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/demo-files/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo-files/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/demo-files/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/selection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/fonts/icomoon/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/fonts/icomoon/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/hero_bg_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/hero_bg_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/hero_bg_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/hero_bg_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/hero_bg_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/hero_bg_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/img_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/img_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/img_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/img_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/img_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/img_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/img_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/img_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/person_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/person_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/person_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/person_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/person_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/person_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/images/person_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/images/person_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/templates/sim_content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/aos.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/aos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/bootstrap-datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/jquery-migrate-3.0.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/jquery-migrate-3.0.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/jquery.countdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/jquery.countdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/jquery.magnific-popup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/jquery.stellar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/jquery.stellar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/js/slick.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/_site-base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/_site-base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/_site-blocks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/_site-blocks.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/_site-navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/_site-navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_badge.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_button-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_button-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_close.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_close.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_custom-forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_custom-forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_input-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_input-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_list-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_popover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_popover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_print.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_print.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_reboot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_root.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_tooltip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_tooltip.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_transitions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_transitions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_type.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap-reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/bootstrap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_box-shadow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_caret.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_float.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_float.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_hover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_image.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_lists.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_resize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_size.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_size.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/mixins/_visibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_align.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_align.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_borders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_display.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_display.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_embed.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_flex.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_float.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_float.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_position.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_position.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_shadows.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_sizing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接码/html/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/接码平台/static/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,29 +251,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>seriesid</find>
-      <find>speclist</find>
-      <find>bagtypeitems</find>
-      <find>天窗</find>
-      <find>有限责任公司（法人独资）</find>
-      <find>get_car_parser</find>
-      <find>9</find>
-      <find>3170</find>
-      <find>奥迪A6</find>
-      <find>3</find>
-      <find>1</find>
-      <find>4105</find>
-      <find>2223971</find>
-      <find>1836481</find>
-      <find>1644629</find>
-      <find>口碑数据获取完成</find>
-      <find>车型口碑ID列表获取完成</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -264,27 +286,30 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/接码平台/templates" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\project\接码平台\static" />
+      <recent name="D:\PycharmProjects\project\接码平台\templates" />
+      <recent name="D:\PycharmProjects\project\接码平台" />
       <recent name="X:\project\project\基类模块\模块常用语法\数据库相关" />
       <recent name="X:\project\project\小爬虫\汽车之家\口碑数据\获取全系车型口碑" />
-      <recent name="X:\project\project\基类模块\模块常用语法" />
-      <recent name="X:\project\project\小爬虫" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\project\接码平台\templates" />
       <recent name="X:\project\project\小爬虫\汽车之家\口碑数据\获取全系车型口碑" />
       <recent name="X:\project\project\小爬虫\汽车之家\口碑数据" />
       <recent name="X:\project\project\政务平台\2号\spider\code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.5-6">
-    <configuration name="1111111 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.短信模块">
+    <configuration name="短信模块" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,12 +317,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基类模块/模块常用语法" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/小爬虫/汽车之家/口碑数据/获取全系车型口碑/1111111.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基类模块/模块常用语法/短信模块.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -396,18 +421,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.koubei_autohome" />
-      <item itemvalue="Python.1111111 (1)" />
       <item itemvalue="Python.spider" />
       <item itemvalue="Python.spider (1)" />
       <item itemvalue="Python.5-6" />
+      <item itemvalue="Python.短信模块" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.短信模块" />
         <item itemvalue="Python.5-6" />
         <item itemvalue="Python.spider (1)" />
         <item itemvalue="Python.spider" />
         <item itemvalue="Python.koubei_autohome" />
-        <item itemvalue="Python.1111111 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -425,6 +450,9 @@
       <workItem from="1594191678288" duration="3741000" />
       <workItem from="1594202411832" duration="12383000" />
       <workItem from="1594263694391" duration="8442000" />
+      <workItem from="1594279991054" duration="10635000" />
+      <workItem from="1594350484068" duration="3632000" />
+      <workItem from="1594367330624" duration="17457000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578147200656</created>
@@ -635,6 +663,22 @@
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206167774" />
+    <state width="1637" height="205" key="GridCell.Tab.0.bottom" timestamp="1594378372620">
+      <screen x="1366" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="205" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594378372620" />
+    <state width="1637" height="205" key="GridCell.Tab.0.center" timestamp="1594378372620">
+      <screen x="1366" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="205" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594378372620" />
+    <state width="1637" height="205" key="GridCell.Tab.0.left" timestamp="1594378372619">
+      <screen x="1366" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="205" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594378372619" />
+    <state width="1637" height="205" key="GridCell.Tab.0.right" timestamp="1594378372620">
+      <screen x="1366" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="205" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594378372620" />
     <state x="1482" y="149" key="SettingsEditor" timestamp="1594206124610">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
@@ -651,5 +695,8 @@
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="2036" y="295" key="svn.repositoryBrowser/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594203243628" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project$.coverage" NAME="短信模块 Coverage Results" MODIFIED="1594372691326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基类模块/模块常用语法" />
   </component>
 </project>
