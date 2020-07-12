@@ -1,4 +1,4 @@
-"""接码平台 URL Configuration
+"""accessCode URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
-from AccessCode import views
+from code import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),  # 博客后台登录页

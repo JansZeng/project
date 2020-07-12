@@ -1,22 +1,5 @@
 ***********
-待办:
-1.队长
-2.多收款码回调问题
-3.抖音无水印视频下载
-4.scrapy
-
-
-***************
-移动端 口碑
-https://koubei.app.autohome.com.cn/autov9.1.0/alibi/seriesalibiinfos-pm2-ss3170-st0-p112-s20-isstruct0-o0.json
-
-口碑详情数据
-https://koubeiipv6.app.autohome.com.cn/autov9.13.0/alibi/NewEvaluationInfo.ashx?eid=31140
-
-
-这是个测试
-
-
-com.ss.android.ugc.aweme:id/ac0
-com.ss.android.ugc.aweme:id/eou
-//androidx.recyclerview.widget.RecyclerView[@resource-id="com.ss.android.ugc.aweme:id/eou"]/android.widget.FrameLayout/android.widget.TextView
+待办：
+- 接码平台 配置到阿里云服务器，绑定ccccc.run 域名
+- 接入网站流量统计
+- 后台记录流量
