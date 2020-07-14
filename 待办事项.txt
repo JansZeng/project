@@ -1,5 +1,14 @@
 ***********
 待办：
-- 接码平台 配置到阿里云服务器，绑定ccccc.run 域名
+- 接码平台 配置到阿里云服务器，绑定ccccc.run 域名  √
 - 接入网站流量统计
+    百度统计 https://tongji.baidu.com/web/welcome/login?castk=LTE%3D
+    友盟统计  https://developer.umeng.com/docs/67963/detail/68609
+
 - 后台记录流量
+
+-  顶级域名注册： 关键词 sim
+
+
+300 335 400  360
+885 260  1035  280

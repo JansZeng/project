@@ -109,7 +109,7 @@ class Spider:
             self.log.info('打码中...')
             # 判断是否有弹窗验证
             time.sleep(2)  # 加2秒等待防止访问太快页面加载不出元素
-            code = self.driver.find_elements_by_xpath('//div[@class="vcode-body"]/div[1]/div/div[2]/div[2]')
+            code = self.driver.find_elements_by_xpath('//div[@class="mod-vcodes"]/div/div[2]/div[2]')
             if code:
                 if not self.code(code[0]):
                     self.log.info('打码失败,重试!')
@@ -142,7 +142,7 @@ class Spider:
         # print('下载验证图片')
         html = self.driver.page_source  # 获取页面源码
         html = etree.HTML(html)  # 源码转为etree对象
-        url = html.xpath('//div[@class="vcode-body"]/div[1]/div/div[1]/img/@src')[0]  # 提取验证码图片url
+        url = html.xpath('//div[@class="mod-vcodes"]/div/div[1]/img/@src')[0]  # 提取验证码图片url
         # print(url)
         # 判断图片是否存在
         img_file = '验证码.jpg'
@@ -159,7 +159,7 @@ class Spider:
         # 滑动滑块
         ActionChains(self.driver).drag_and_drop_by_offset(code, px, 0).perform()
         time.sleep(3)
-        if self.driver.find_elements_by_xpath('//div[@class="vcode-body"]'):
+        if self.driver.find_elements_by_xpath('//div[@class="mod-vcodes"]'):
             return False
         return True
 

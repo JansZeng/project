@@ -6,18 +6,23 @@
 import csv
 import requests
 import json
-import urllib.parse
+from urllib.parse import quote
 import time
 
-headers = {
-    "Cookie": "install_id=53112482656; ttreq=1$a4ed279b42b9acb3dee9a3a3c2d645ce99ed786f; odin_tt=38d535495242f853ffdf693ae531a152910b1047bbb3ba5c8e2fa7f3cbd7f6a1ec9f6027fc44ea36c4bd45281487d4a7; sid_guard=d074b1c430eef87a3599e20ef34a5555%7C1543976393%7C5184000%7CSun%2C+03-Feb-2019+02%3A19%3A53+GMT; uid_tt=4e0b25bc326fae6b428afc5826243eeb; sid_tt=d074b1c430eef87a3599e20ef34a5555; sessionid=d074b1c430eef87a3599e20ef34a5555",
-    "Accept-Encoding": "gzip",
-    "X-SS-REQ-TICKET": "1543976807598",
-    "X-Tt-Token": "00d074b1c430eef87a3599e20ef34a5555b97ecb95bff1a3d1a81726386a1adf7a91df6c32bfa121fc10400ffede8df72016",
-    "sdk-version": "1",
-    "X-SS-TC": "0",
-    "User-Agent": "com.ss.android.ugc.aweme/350 (Linux; U; Android 8.0.0; zh_CN; MI 5; Build/OPR1.170623.032; Cronet/58.0.2991.0)"
-}
+ts = str(time.time()).split(".")[0]
+_rticket = str(time.time() * 1000).split(".")[0]
+headers={
+        "X-Gorgon": '0404a0d802048185c98e95e9f257fed99bb4fbb9cf0019714e85',
+        "X-Khronos": ts,
+        "sdk-version":"1",
+        "Accept-Encoding": "gzip",
+        "X-SS-REQ-TICKET": _rticket,
+        "Host": "search-hl.amemv.com",
+        "Connection": "Keep-Alive",
+        'User-Agent': 'okhttp/3.10.0.1',
+        "x-tt-token": '0066d7f0c5f866ecfa0e3e0f6e55d8a49464f44daeaadcaaa7eaee497bcfb624f6f49690618c4329c7423eef0727d5256a17'
+      }
+
 count = 0
 
 
@@ -27,7 +32,21 @@ def post_html(url):
     :param url:
     :return:
     """
-    rsp = requests.post(url, headers=headers, verify=False)
+    print(url)
+    data = {'cursor':10,
+            'keyword': '%E7%BE%8E%E9%A3%9F',
+            'count': 10,
+           'type': 1,
+           'is_pull_refresh': 1,
+           'hot_search': 0,
+           'search_source': 'switch_tab',
+            'search_id': '202007131617510101440630873402F1B0',
+           'query_correct_type': 1,
+            'enter_from': 'homepage_hot'}
+    rsp = requests.post(url, headers=headers, data=data, verify=False)
+    print(111)
+    print(rsp.text)
+    print(2)
     # return rsp.content.decode(rsp.apparent_encoding, 'ignore')
     return rsp.content.decode(encoding='utf-8')
 
@@ -39,15 +58,17 @@ def get_video(key):
     :return:
     """
     # 编译关键词
-    keys = urllib.parse.quote(key)
+    keys = quote(key)
     # 下一页
     cursor = 0
     while True:
         # 拼接用户搜索接口url
         # hot_search 0普通搜索 1热门搜索 type=1 用户列表
-        url = 'https://aweme-hl.snssdk.com/aweme/v1/discover/search/?cursor=' + str(cursor) + '&keyword=' + keys + '&offset=0&count=10&type=1&is_pull_refresh=0&hot_search=0&latitude=30.725991&longitude=103.968091&ts=1543984658&js_sdk_version=1.2.2&app_type=normal&manifest_version_code=350&_rticket=1543984657736&ac=wifi&device_id=60155513971&iid=53112482656&os_version=8.0.0&channel=xiaomi&version_code=350&device_type=MI%205&language=zh&uuid=862258031596696&resolution=1080*1920&openudid=8aa8e21fca47053b&update_version_code=3502&app_name=aweme&version_name=3.5.0&os_api=26&device_brand=Xiaomi&ssmix=a&device_platform=android&dpi=480&aid=1128&as=a1e5055072614ce6a74033&cp=5813c65d2e7d0769e1[eIi&mas=01327dcd31044d72007555ed00c3de0b5dcccc0c2cec866ca6c62c'
+        # url = 'https://aweme-hl.snssdk.com/aweme/v1/discover/search/?cursor=' + str(cursor) + '&keyword=' + keys + '&offset=0&count=10&type=1&is_pull_refresh=0&hot_search=0&latitude=30.725991&longitude=103.968091&ts=1543984658&js_sdk_version=1.2.2&app_type=normal&manifest_version_code=350&_rticket=1543984657736&ac=wifi&device_id=60155513971&iid=53112482656&os_version=8.0.0&channel=xiaomi&version_code=350&device_type=MI%205&language=zh&uuid=862258031596696&resolution=1080*1920&openudid=8aa8e21fca47053b&update_version_code=3502&app_name=aweme&version_name=3.5.0&os_api=26&device_brand=Xiaomi&ssmix=a&device_platform=android&dpi=480&aid=1128&as=a1e5055072614ce6a74033&cp=5813c65d2e7d0769e1[eIi&mas=01327dcd31044d72007555ed00c3de0b5dcccc0c2cec866ca6c62c'
+        url = 'https://search-hl.amemv.com/aweme/v1/discover/search/?ts=1594628278&cpu_support64=true&storage_type=2&host_abi=armeabi-v7a&_rticket=1594628278999&mac_address=32%3A8a%3Aee%3Ae5%3Aec%3Ae4&mcc_mnc=46011&'
         # 获取搜索界面并转化为json对象
         jsonObj = json.loads(post_html(url))
+        print(jsonObj)
         metes = jsonObj['user_list']
         nums = len(metes)
         for _ in range(nums):
