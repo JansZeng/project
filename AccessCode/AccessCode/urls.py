@@ -21,7 +21,7 @@ from code import views
 urlpatterns = [
     # path('admin/', admin.site.urls),  # 博客后台登录页
     url(r'^$', views.index, name='index'),  # 首页
-    path('sim-content/', views.sim_content, name='sim-content'),  # 短信详情页
-    path('index2/', views.index2, name='index2'),  # 短信详情页
+    path('sim', views.sim_content, name='sim-content'),  # 短信详情页
+    path('sim_update/', views.sim_update),  # 短信详情页
 
 ]

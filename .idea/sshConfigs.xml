@@ -15,6 +15,7 @@
       <sshConfig authType="PASSWORD" host="127.0.0.1" id="8a4a7461-b0a3-4477-8a5f-2fd67cae83a5" port="1234" customName="django64" nameFormat="CUSTOM" />
       <sshConfig authType="PASSWORD" host="127.0.0.1" id="841495e8-5628-4343-829d-c3186d2e95ca" port="1234" customName="django64" nameFormat="CUSTOM" />
       <sshConfig authType="PASSWORD" host="127.0.0.1" id="351256dd-6742-4b11-ac68-e6dda3c73fde" port="1234" customName="django64" nameFormat="CUSTOM" />
+      <sshConfig authType="PASSWORD" host="127.0.0.1" id="2e826b00-4cc6-4b1d-911c-94dc8aacad47" port="1234" customName="django64" nameFormat="CUSTOM" />
     </configs>
   </component>
 </project>

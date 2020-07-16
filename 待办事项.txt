@@ -6,6 +6,7 @@
     友盟统计  https://developer.umeng.com/docs/67963/detail/68609
 
 - 后台记录流量
+    已经接入了 百度统计 和 友盟统计
 
 -  顶级域名注册： 关键词 sim
 

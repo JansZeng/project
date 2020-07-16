@@ -84,7 +84,7 @@ def sms_phone(phone, content, logger):
 def main():
     logger = log_init()
     sms_phone('18210836362', 'IP账号：ba618b3e3adc4e7c93127546d58502a5 即将到期及时续费!', logger)
-    sms_phone('13730963728', 'IP账号：ba618b3e3adc4e7c93127546d58502a5 即将到期及时续费!', logger)
+    # sms_phone('16210788973', 'IP账号：ba618b3e3adc4e7c93127546d58502a5 即将到期及时续费!', logger)
 
 
 if __name__ == '__main__':
