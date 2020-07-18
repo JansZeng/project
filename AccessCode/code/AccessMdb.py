@@ -17,9 +17,7 @@ __author__ = 'mayi'
 
 
 # 导入模块
-import hashlib
 import pypyodbc
-from SqliteDatabase import DBTool
 
 
 class AccessMdb(object):

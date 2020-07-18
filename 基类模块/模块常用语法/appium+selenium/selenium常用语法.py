@@ -132,23 +132,15 @@ class Proxy(object):
         self.getpage(self.browser)
 
     def getbrowser(self):
+        """初始化浏览器"""
         options = webdriver.ChromeOptions()
-        # 设置代理
-        desired_capabilities = webdriver.DesiredCapabilities.INTERNETEXPLORER.copy()
-        desired_capabilities['proxy'] = {
-            "httpProxy": self.proxy_ip,
-            "proxyType": "MANUAL",  # 此项不可注释
-            # "ftpProxy": self.proxy_ip,  # 代理ip是否支持这个协议
-            # "sslProxy": self.proxy_ip,  # 代理ip是否支持这个协议
-            # "noProxy": None,
-            # "class": "org.openqa.selenium.Proxy",
-            # "autodetect": False
-        }
         # 使用无头模式
         options.add_argument('headless')
-        browser = webdriver.Chrome(chrome_options=options,
-                                   desired_capabilities=desired_capabilities)
-        return browser
+        # 添加代理
+        options.add_argument(f"--proxy-server=http://{ip}")
+        driver = webdriver.Chrome(chrome_options=options)
+
+        return driver
 
     def getpage(self, browser):
         # 打开目标网站
@@ -180,3 +172,15 @@ def selenium_get(self, url):
         # 当页面加载时间超过设定时间，通过执行Javascript来停止载，然后继续执行后续操作
         self.driver.execute_script('window.stop()')
         return False
+
+# selenium 设置代理IP
+def getbrowser():
+    """初始化浏览器"""
+    options = webdriver.ChromeOptions()
+    # 使用无头模式
+    options.add_argument('headless')
+    # 添加代理
+    options.add_argument(f"--proxy-server=http://{ip}")
+    driver = webdriver.Chrome(chrome_options=options)
+
+    return driver

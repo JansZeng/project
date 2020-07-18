@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),  # 首页
     path('sim', views.sim_content, name='sim-content'),  # 短信详情页
     path('sim_update/', views.sim_update),  # 短信详情页
-
+    path('ip/', views.ip),  # 返回访问者ip
 ]
