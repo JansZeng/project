@@ -9,6 +9,8 @@ import bs4
 import json
 import time
 import shutil
+import pymysql
+import hashlib
 import datetime
 import requests
 import xlsxwriter
@@ -415,7 +417,7 @@ class Spider:
                   '车内PM2.5过滤装置': 235, '负离子发生器': 236, '车内香氛装置': 237, '车载冰箱': 238, '面部识别': 239,
                   'OTA升级': 240, '四驱形式': 241, '后排车门开启方式': 242, '货箱尺寸(mm)': 243, '中央差速器结构': 244, '实测快充时间(小时)': 245,
                   '实测慢充时间(小时)': 246, '电动机': 247, '最大载重质量(kg)': 248, '工信部续航里程(km)': 249, '品牌ID': 250, '品牌名称': 251, '车系ID': 252,
-                  '车系名称': 253, '车型ID': 254, '选装包': 255, '外观颜色': 256, '内饰颜色': 257
+                  '车系名称': 253, '车型ID': 254, '选装包': 255, '外观颜色': 256, '内饰颜色': 257, 'MD5': 258
                   }
         rootPath = "5-文字替换后json/"
         # xlwt 创建文件
@@ -564,23 +566,45 @@ class Spider:
             # 写入表头 startRow行数 cols列数 co标题
             # 计算起止行号
             endRowNum = startRow + len(carItem['车型ID'])  # 车辆款式记录数
+
             for row in range(startRow, endRowNum):
-                for col in carItem:
-                    try:
-                        context = str(carItem[col][row - startRow])
-                        colNum = Header[col]  # 根据项目名称查询列数
-                    except:
+                # md5 加密
+                md5data = ''.join([carItem.get(i)[0] for i in ['品牌名称', '轴距(mm)', '长*宽*高(mm)'] if carItem.get(i)])
+                mdbMd5 = self.updateMd5(md5data)
+                data = list()
+                # 循环表头
+                for Head in Header.keys():
+                    # 判断当前车型参数是否有此项数据
+                    if not carItem.get(Head):
+                        data.append('-')
                         continue
-                    if not context:
-                        context = '-'
+                    try:
+                        context = str(carItem[Head][row - startRow])
+                        data.append(str(context))
+                        # colNum = Header[col]  # 根据项目名称查询列数
+                    except Exception as e:
+                        continue
+
                     # 写入数据 row行 colNum列 context内容
-                    worksheet.write_string(row, colNum, context)
+                    # print(context)
+                    # worksheet.write_string(row, colNum, context)
+                data.append(mdbMd5)
+                # 连接数据库
+                db = MySql()
+                db.create(tuple(data))
                 print(f'第:{count}条数据插入成功')
                 count += 1
             else:
                 startRow = endRowNum
 
-        workbook.close()
+        # workbook.close()
+
+    def updateMd5(self, data):
+        # 创建md5对象
+        md5obj = hashlib.md5()
+        md5obj.update(data.encode(encoding='utf-8'))
+        md5code = md5obj.hexdigest()
+        return md5code
 
     @run_time
     def run(self):
@@ -619,6 +643,7 @@ class Spider:
             # 删除临时文件
             self.del_temporary_file()
             time.sleep(0.5)
+            break
 
             # count += 1
             # if count > 20:
@@ -629,10 +654,40 @@ class Spider:
         self.save_xls()
 
 
+class MySql:
+    def __init__(self):
+        db_config = {
+            'host': '127.0.0.1',
+            'port': 3306,
+            'user': 'root',
+            'password': 'root',
+            'db': 'auto',
+            'charset': 'utf8'
+        }
+        """获取连接对象和执行对象"""
+        self.conn = pymysql.connect(**db_config)
+        self.cursor = self.conn.cursor()
+
+    def create(self, content):
+        """数据写入"""
+        try:
+            sql = "INSERT INTO autodatebase VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
+            affectedcount = self.cursor.execute(sql, content)
+
+            # 提交数据库事务
+            self.conn.commit()
+            print('成功插入{0}条数据'.format(affectedcount))
+        except pymysql.DatabaseError as e:
+            # 回滚数据库事物
+            self.conn.rollback()
+            print('插入数据失败:{}'.format(e))
+        finally:
+            # 关闭数据连接
+            self.cursor.close()
+            self.conn.close()
+
+
 if __name__ == '__main__':
     spider = Spider()
     spider.run()
-    # # spider.save_xls()
-    # for i in spider.get_model():
-    #     brand_l, che_id, brand_n, car_l, car_n, model_l, model_n = i
-    #     print(model_l, model_n)
+    # spider.save_xls()
