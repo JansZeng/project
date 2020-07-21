@@ -50,22 +50,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="接码">
-      <change afterPath="$PROJECT_DIR$/AccessCode/sim.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AccessCode/费用/html jueqy费用.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AccessCode/费用/万象代理费用.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AccessCode/费用/图片1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AccessCode/费用/域名费用.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AccessCode/费用/微信图片_20200720214815.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AccessCode/费用/网页制作.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessCode/TrafficScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/TrafficScript.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessCode/code/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/code/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessCode/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AccessCode/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessCode/templates/sim_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/templates/sim_content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessCode/接码平台相关.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/接码平台相关.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessCode/更新记录.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/更新记录.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessCode/配置相关.md" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/配置相关.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +128,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AccessCode/费用" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AccessCode" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -155,10 +140,10 @@
       <recent name="D:\PycharmProjects\project\接码平台\static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\project\AccessCode" />
       <recent name="D:\PycharmProjects\project\AccessCode\费用" />
       <recent name="D:\PycharmProjects\project\AccessCode\code" />
       <recent name="D:\PycharmProjects\project\抖音\视频下载" />
-      <recent name="D:\PycharmProjects\project\AccessCode" />
       <recent name="D:\PycharmProjects\project\接码平台\接码平台" />
     </key>
   </component>
@@ -310,7 +295,7 @@
       <workItem from="1594456095749" duration="3643000" />
       <workItem from="1594464638281" duration="46870000" />
       <workItem from="1594739575151" duration="45650000" />
-      <workItem from="1594908634654" duration="97177000" />
+      <workItem from="1594908634654" duration="97791000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578147200656</created>
@@ -494,7 +479,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595101303705</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="接码">
+      <created>1595296626361</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1595296626361</updated>
+    </task>
+    <task id="LOCAL-00028" summary="接码">
+      <created>1595296658785</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1595296658785</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -589,10 +588,10 @@
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="1482" y="149" key="SettingsEditor/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594405878420" />
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1595101307229">
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1595296678863">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595101307229" />
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595296678863" />
     <state x="1861" y="291" key="git4idea.merge.GitPullDialog" timestamp="1594208327956">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
