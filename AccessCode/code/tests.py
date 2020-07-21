@@ -53,8 +53,8 @@ def db():
 @run_time
 def upload(datas):
     """向服务器上传数据"""
-    # _url = f'http://www.ccccc.run/sim_update/'
-    _url = f'http://127.0.0.1:8000/sim_update/'
+    _url = f'http://www.ccccc.run/sim_update/'
+    # _url = f'http://127.0.0.1:8000/sim_update/'
     for da in datas:
         md5 = tuple([updateMd5(da[1])])  # 短信内容转换成md5并转为元祖
         number, content, time, simnum = da

@@ -104,7 +104,7 @@ class Proxy(object):
         """初始化浏览器"""
         options = webdriver.ChromeOptions()
         # 使用无头模式
-        options.add_argument('headless')
+        # options.add_argument('headless')
         # 添加代理
         options.add_experimental_option('excludeSwitches', ['enable-logging'])  # 解决获取适配器失败
         options.add_argument(f"--proxy-server=http://{ip}")
@@ -126,6 +126,7 @@ class Proxy(object):
             log_init().info(f'{ip} 请求 {url} 首页')
             driver.get(url)
             title = driver.title
+            time.sleep(10000)
             if '免费在线接码平台' not in title:
                 log_init().info(f'{ip} 失效，切换下一个')
                 return False
@@ -169,7 +170,7 @@ class Proxy(object):
 
 def get_ip():
     """请求代理IP"""
-    qty = 5
+    qty = 1
     url = f'http://120.79.85.144/index.php/api/entry?method=proxyServer.tiqu_api_url&packid=2&fa=0&fetch_key=&groupid=0&qty={qty}&time=1&port=1&format=json&ss=5&css=&ipport=1&et=1&pi=1&co=1&pro=&city=&dt=1&auth=0&ipnum=10&userip=1&auth_key=fnp63K6ncap_p3XYhHWpaX6ieamEspeZs4uUs7mYkGqXfYfUu7plZ5O6eteZeM-wfnx5rA&usertype=22'
     res = requests.get(url).json()
     if not res.get('data'):
@@ -186,7 +187,8 @@ def get_ip():
 def main():
     proxy = Proxy()
     count = 0
-    urls = ['http://www.ccccc.run', 'http://www.dongdongmeiche.com']
+    # urls = ['http://www.ccccc.run', 'http://www.dongdongmeiche.com']
+    urls = ['https://www.visvn.cn/c.php?id=7317']
     while True:
         if count >= 5:
             break
@@ -199,7 +201,7 @@ def main():
         # 启动所有线程
         for thread in thread_list:
             thread.start()
-            time.sleep(random.randint(40, 60))
+            # time.sleep(random.randint(40, 60))
 
         # 主线程中等待所有子线程退出
         for thread in thread_list:
