@@ -50,9 +50,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5bd4fc2-c403-45a6-8fab-ed4cc94fdbee" name="Default" comment="接码">
-      <change afterPath="$PROJECT_DIR$/小爬虫/汽车之家/全系车型数据(包含停售车型)/autodatebase.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/小爬虫/商车网/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/小爬虫/商车网/spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/小爬虫/商车网/获取记录.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/小爬虫/汽车之家/全系车型数据(包含停售车型)/全系车型参数(包含历史车型).py" beforeDir="false" afterPath="$PROJECT_DIR$/小爬虫/汽车之家/全系车型数据(包含停售车型)/全系车型参数(包含历史车型).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AccessCode/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AccessCode/接码平台相关.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AccessCode/接码平台相关.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,29 +152,7 @@
       <recent name="D:\PycharmProjects\project\抖音\视频下载" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.全系车型参数(包含历史车型)">
-    <configuration name="11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AccessCode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AccessCode/11.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.spider">
     <configuration name="1111" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -238,6 +219,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="spider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/小爬虫/商车网" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/小爬虫/商车网/spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,17 +266,17 @@
     <list>
       <item itemvalue="Python.tests" />
       <item itemvalue="Python.TrafficScript" />
-      <item itemvalue="Python.11" />
       <item itemvalue="Python.全系车型参数(包含历史车型)" />
       <item itemvalue="Python.1111" />
+      <item itemvalue="Python.spider" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spider" />
         <item itemvalue="Python.全系车型参数(包含历史车型)" />
         <item itemvalue="Python.1111" />
         <item itemvalue="Python.TrafficScript" />
         <item itemvalue="Python.tests" />
-        <item itemvalue="Python.11" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +300,7 @@
       <workItem from="1594456095749" duration="3643000" />
       <workItem from="1594464638281" duration="46870000" />
       <workItem from="1594739575151" duration="45650000" />
-      <workItem from="1594908634654" duration="122162000" />
+      <workItem from="1594908634654" duration="134647000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578147200656</created>
@@ -502,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595297403761</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="接码">
+      <created>1595347019149</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1595347019149</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -553,11 +563,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="接码" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1874" y="153" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595339583224">
+    <state x="1874" y="153" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595361709676">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1680.1010@0.0.1366.728" timestamp="1594743924973" />
-    <state x="1874" y="153" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595339583224" />
+    <state x="1874" y="153" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595361709676" />
     <state x="1867" y="266" key="FileChooserDialogImpl" timestamp="1594203190501">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
@@ -570,26 +580,26 @@
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="2078" y="389" width="537" height="311" key="Github.ShareDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594206167774" />
-    <state width="1637" height="665" key="GridCell.Tab.0.bottom" timestamp="1595339515971">
+    <state width="1637" height="672" key="GridCell.Tab.0.bottom" timestamp="1595362189517">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="252" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1010@0.0.1366.728" timestamp="1595086589248" />
-    <state width="1637" height="665" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595339515971" />
-    <state width="1637" height="665" key="GridCell.Tab.0.center" timestamp="1595339515971">
+    <state width="1637" height="672" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595362189517" />
+    <state width="1637" height="672" key="GridCell.Tab.0.center" timestamp="1595362189517">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="252" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1010@0.0.1366.728" timestamp="1595086589248" />
-    <state width="1637" height="665" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595339515971" />
-    <state width="1637" height="665" key="GridCell.Tab.0.left" timestamp="1595339515971">
+    <state width="1637" height="672" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595362189517" />
+    <state width="1637" height="672" key="GridCell.Tab.0.left" timestamp="1595362189517">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="252" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1010@0.0.1366.728" timestamp="1595086589248" />
-    <state width="1637" height="665" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595339515971" />
-    <state width="1637" height="665" key="GridCell.Tab.0.right" timestamp="1595339515971">
+    <state width="1637" height="672" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595362189517" />
+    <state width="1637" height="672" key="GridCell.Tab.0.right" timestamp="1595362189517">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="252" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1010@0.0.1366.728" timestamp="1595086589248" />
-    <state width="1637" height="665" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595339515971" />
+    <state width="1637" height="672" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595362189517" />
     <state width="1637" height="335" key="GridCell.Tab.1.bottom" timestamp="1595323462927">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
@@ -614,10 +624,10 @@
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
     <state x="1482" y="149" key="SettingsEditor/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1594405878420" />
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1595297418833">
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2" timestamp="1595347022813">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595297418833" />
+    <state x="1798" y="237" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1595347022813" />
     <state x="1861" y="291" key="git4idea.merge.GitPullDialog" timestamp="1594208327956">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
@@ -636,6 +646,7 @@
     <SUITE FILE_PATH="coverage/project$test.coverage" NAME="test Coverage Results" MODIFIED="1594836439468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AccessCode/code" />
     <SUITE FILE_PATH="coverage/project$tests.coverage" NAME="tests Coverage Results" MODIFIED="1595178132351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AccessCode/code" />
     <SUITE FILE_PATH="coverage/project$__.coverage" NAME="全系车型参数(包含历史车型) Coverage Results" MODIFIED="1595339423557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/汽车之家/全系车型数据(包含停售车型)" />
+    <SUITE FILE_PATH="coverage/project$spider.coverage" NAME="spider Coverage Results" MODIFIED="1595362007085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小爬虫/商车网" />
     <SUITE FILE_PATH="coverage/project$AccessMdb.coverage" NAME="AccessMdb Coverage Results" MODIFIED="1594468251551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$.coverage" NAME="短信模块 Coverage Results" MODIFIED="1594795809104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基类模块/模块常用语法" />
   </component>
