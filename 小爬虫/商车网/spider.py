@@ -31,7 +31,8 @@ class ShangCheWang(object):
         url = 'https://www.cn357.com/notice_list'
         response = self._parse_url(url=url)
         html = etree.HTML(response.text)
-
+        if not html:
+            return
         notice_urls = html.xpath('//div[@class="lotList uiLinkList clear"]/a/@href')
         notice_urls = [f'https://www.cn357.com{i}' for i in notice_urls]
         notice_titles = html.xpath('//div[@class="lotList uiLinkList clear"]/a/text()')
@@ -175,3 +176,4 @@ class ShangCheWang(object):
 if __name__ == '__main__':
     spider = ShangCheWang()
     spider.run()
+    spider.get_content(table_url='https://www.cn357.com/notice884200_SC6955XCG5')
