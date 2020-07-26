@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-# 文件 ：批量添加子站.py
+# 文件 ：spider.py
 # IED ：PyCharm
 # 时间 ：2019/10/31 0031 13:25
 # 版本 ：V1.3
-# 抖音版本 ：11.8.0
+# 抖音版本 ：12.0.0
 import os
 import time
 import psutil
@@ -17,6 +17,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from script import Monitor
+
 """
 Appium adb 获取真实appActivity
 https://blog.csdn.net/qq_38154948/article/details/90408056
@@ -47,16 +48,21 @@ class Spider:
         # self.x = self.driver.get_window_size()['width']  # 宽
         # self.y = self.driver.get_window_size()['height']  # 长
         # print(self.x, self.y)
-        self.one = 'com.ss.android.ugc.aweme:id/ac9'  # 评论数量ID
-        self.two = 'com.ss.android.ugc.aweme:id/er4'  # 评论数据模块ID
+        # 12.0
+        self.one = 'com.ss.android.ugc.aweme:id/acl'  # 评论数量ID
+        self.two = 'com.ss.android.ugc.aweme:id/ety'  # 评论数据模块ID
+        # 12.1
+        # self.one = 'com.ss.android.ugc.aweme:id/ad5'  # 评论数量ID
+        # self.two = 'com.ss.android.ugc.aweme:id/ev0'  # 评论数据模块ID
 
     def slide(self):
         """
         滑动
         :return:
         """
-        while True:           
-            print('定位评论按钮')            
+        while True:
+            proxy()
+            print('定位评论按钮')
             comment = self.wait.until(EC.presence_of_element_located((By.ID, self.one)))
             comment_num = comment.text
             if '评论' in comment_num:
@@ -105,7 +111,7 @@ class Spider:
                         try:
                             con = WebDriverWait(self.driver, 5, 1, AttributeError).until(
                                 EC.presence_of_all_elements_located((By.XPATH,
-                                                                     '//androidx.recyclerview.widget.RecyclerView[@resource-id="com.ss.android.ugc.aweme:id/er4"]/android.widget.FrameLayout/android.widget.TextView')))
+                                                                     f'//androidx.recyclerview.widget.RecyclerView [@resource-id="{self.two}"]/android.widget.FrameLayout/android.widget.TextView')))
                             # print(con, len(con))
                             if con:
                                 print('到达底部,切换下一个视频')
@@ -115,11 +121,12 @@ class Spider:
                             pass
                         print('没有到达底部')
                     # 下拉刷新十次后 上刷一次 防止加载不出来
-                    # if not (i + 1) % 30:
-                    #     self.driver.swipe(200, 1400, 200, 1600, 500)
-                    #     time.sleep(0.5)
-                    #     continue
-                   
+                    if not (i + 1) % 30:
+                        self.driver.swipe(200, 1000, 200, 1200, 500)
+                        # self.driver.swipe(200, 1400, 200, 1600, 500)
+                        time.sleep(0.5)
+                        continue
+
                     # 根据时间选择退出刷新当前视频
                     # new_time = (datetime.datetime.now()+datetime.timedelta(minutes=10)).strftime('%Y-%m-%d %H:%M:%S')
                     # print(new_time)
@@ -128,18 +135,20 @@ class Spider:
                     # if new_time < start_time:
                     #     print('超时退出')
                     #     break
-                    self.driver.swipe(200, 1700, 200, 800, 600)
-                    
+                    self.driver.swipe(200, 1600, 200, 500, 600)
+                    # self.driver.swipe(200, 1700, 200, 800, 600)
+
                 # 下一个视频
                 self.driver.keyevent(4)
                 time.sleep(2)
-                self.driver.swipe(200, 1700, 200, 500, 500)
+                self.driver.swipe(200, 1400, 200, 500, 500)
+                # self.driver.swipe(200, 1700, 200, 500, 500)
                 print('*' * 25)
                 break
 
 
 def proxy():
-    url = 'http://www.dongdongmeiche.cn/proxy/ba618b3e3adc4e7c93127546d58502a5'
+    url = 'http://www.dongdongmeiche.cn/proxy/974de7a339994f00934bd0f2fb1d1e87'
     opener = urllib.request.build_opener()
     try:
         opener.open(url)
@@ -156,12 +165,13 @@ def proxy():
     code = content['errorcode']
     if code != 10001:
         print(content['context'])
+        input('代理验证失败!按确认键退出.')
         os._exit(0)
     print(content['context'])
 
 
 def adb_devices():
-    """读取设备列表"""   
+    """读取设备列表"""
     get_cmd = "adb devices"  # 查询连接设备列表
     count = 0
     try:
@@ -179,9 +189,9 @@ def adb_devices():
             # 分割多条信息为列表
             output = output.decode().replace('\r', '').split('\n')
             # 剔除列表中空字符串
-            output = list(filter(None, output))            
-            print(output)            
-            if len(output) < 5:
+            output = list(filter(None, output))
+            print(output)
+            if len(output) < 1:
                 print("读取设备信息失败,自动重启中...")
                 count += 1
                 os.popen('adb connect 127.0.0.1:21503')
@@ -189,8 +199,8 @@ def adb_devices():
                 os.popen('adb connect 127.0.0.1:21513')
                 time.sleep(1)
                 os.popen('adb connect 127.0.0.1:21523')
-                time.sleep(1)               
-                os.popen('adb connect 127.0.0.1:21533')            
+                time.sleep(1)
+                os.popen('adb connect 127.0.0.1:21533')
                 time.sleep(1)
                 continue
             # 连接设备列表
@@ -206,14 +216,15 @@ def adb_devices():
         time.sleep(1)
         os.popen('adb connect 127.0.0.1:21513')
         time.sleep(1)
-        os.popen('adb connect 127.0.0.1:21523')     
-        time.sleep(1)    
-        os.popen('adb connect 127.0.0.1:21533')      
+        os.popen('adb connect 127.0.0.1:21523')
+        time.sleep(1)
+        os.popen('adb connect 127.0.0.1:21533')
         time.sleep(1)
 
 
 @run_time
 def main(udid, port):
+    count = 0
     while True:
         try:
             spider = Spider()
@@ -235,6 +246,10 @@ def main(udid, port):
             spider.wait = WebDriverWait(spider.driver, 60, 1)
             spider.slide()
         except Exception as e:
+            print(e)
+            count += 1
+            if count > 3:
+                return
             # 重启mitmdump服务
             monitor = Monitor()
             monitor.switch_mitmdump()
@@ -299,7 +314,7 @@ if __name__ == '__main__':
     for i in success:
         s = threading.Thread(target=main, args=(i, port))
         port += 2
-        s.start()                
+        s.start()
         time.sleep(20)
 
 

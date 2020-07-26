@@ -1,0 +1,28 @@
+有识别代号 入库，没有跳过，一行一条，取前8位
+公告型号+识别代号 去重
+只需要轴数为2的
+一秒 请求一次
+14个字段
+明晚之前完成
+轴距  长  宽  高   只取第一个数据 +品牌     计算MD5
+费用：800
+
+
+
+fde526e17fba8116c22c81d6e198dbe2
+
+ba23beb4259f06baff6189256416d58b
+
+
+ID	生产企业	公告型号	公告批次	品牌	类型	燃料种类	轴数	轴距	识别代号	整车长	整车宽	整车高	发动机型号
+producer, vehicle_model_code, batch, brand_name, vehicle_type, fuel_type, axes_num, wheel_base, vin, vehicle_length, vehicle_wide, vehicle_high, engine_type, md5
+
+
+1.刷新md5：品牌表增加了一个新字段real_brand_name，有数据就拿来替换‘品牌名称’重新生成md5，更新商车网数据的md5，同时刷新首字母，没有数据则不更新。
+2.合并数据插入新表mergedata：拿MD5匹配成功后用 商车网:vehicle_model_code,vin,brand_name,engine_displacement     汽车之家：车系名称, 级别,能源类型, 变速箱类型
+这些字段造一条数据插入新表。
+3.mergedata表同样是用公告型号、识别代号组合去重
+
+
+vehicle_model_code, vin, brand_name, engine_displacement , 车系名称,   级别,          能源类型,           变速箱类型
+vehicle_model_code  vin  brand_id    vehicle_name           level   energy_type   transmission_type   engine_displacement

@@ -63,10 +63,10 @@ class Spider:
             # 品牌ID,品牌首字母,名称,车系列表
             che_id, brand_l, brand_n, brand_list, = i['I'], i['L'], i['N'], i['List']
             for q in brand_list:
-                # 车系ID 车系名称,车型列表
+                # 厂商id 厂商名称,车系列表
                 car_l, car_n, car_list = q['I'], q['N'], q['List']
                 for t in car_list:
-                    # 车型ID, 车型名称
+                    # 车系ID, 车系名称
                     model_l = t['I']
                     model_n = t['N']
                     # 品牌首字母,品牌ID,品牌名称,车系ID,车系名称,车型ID,车型名称
@@ -82,7 +82,7 @@ class Spider:
         # 存储车系参数页面源码
         car_resp = self._parse_url(model_url)
         text = str(car_resp.content, encoding="utf-8")
-        # 品牌首字母,品牌ID,品牌名称,车系ID,车系名称,车型ID,车型名称
+        # 品牌首字母,品牌ID,品牌名称,厂商ID,厂商名称,车系ID,车系名称
         file_name = model_page + '/' + str(brand_l) + '-' + str(che_id) + '-' + str(brand_n) + '-' + str(car_l) + '-' +\
                     car_n + '-' + str(model_l) + '-' + model_n + '-' + car_file
         print(file_name)
@@ -156,6 +156,8 @@ class Spider:
         model_urls.append(f'https://car.autohome.com.cn/config/series/{model_id}.html')
         url = f'https://www.autohome.com.cn/{model_id}/sale.html'
         response = self._parse_url(url)
+        if not response.text:
+            return model_urls
         html = etree.HTML(response.text)
         # 停售车型ID
         years_id = html.xpath('//div[@class="title-subcnt-tab"]/ul/li/a/@data-yearid')
@@ -416,8 +418,8 @@ class Spider:
                   '可加热喷水嘴': 229, '空调温度控制方式': 230, '后排独立空调': 231, '后座出风口': 232, '温度分区控制': 233, '车载空气净化器': 234,
                   '车内PM2.5过滤装置': 235, '负离子发生器': 236, '车内香氛装置': 237, '车载冰箱': 238, '面部识别': 239,
                   'OTA升级': 240, '四驱形式': 241, '后排车门开启方式': 242, '货箱尺寸(mm)': 243, '中央差速器结构': 244, '实测快充时间(小时)': 245,
-                  '实测慢充时间(小时)': 246, '电动机': 247, '最大载重质量(kg)': 248, '工信部续航里程(km)': 249, '品牌ID': 250, '品牌名称': 251, '车系ID': 252,
-                  '车系名称': 253, '车型ID': 254, '选装包': 255, '外观颜色': 256, '内饰颜色': 257, 'MD5': 258
+                  '实测慢充时间(小时)': 246, '电动机': 247, '最大载重质量(kg)': 248, '工信部续航里程(km)': 249, '品牌ID': 250, '品牌名称': 251,
+                  '厂商ID': 252, '厂商名称': 253, '车系ID': 254, '车系名称': 255, '车型ID': 256, '选装包': 257, '外观颜色': 258, '内饰颜色': 259, 'MD5': 260
                   }
         rootPath = "5-文字替换后json/"
         # xlwt 创建文件
@@ -446,6 +448,8 @@ class Spider:
             carItem['首字母'] = []  # 首字母
             carItem['品牌名称'] = []  # 品牌名称
             carItem['品牌ID'] = []  # 品牌ID
+            carItem['厂商ID'] = []
+            carItem['厂商名称'] = []
             carItem['车系ID'] = []  # 车系ID
             carItem['车系名称'] = []  # 车系名称
             carItem['车型ID'] = []  # 车型ID
@@ -455,12 +459,14 @@ class Spider:
             # 判断文件大小是否为空 os.path.getsize 返回指定文件大小
             if not os.path.getsize(rootPath + '/' + file):
                 carItem['首字母'].append(file.split('-')[0])
-                carItem['品牌ID'].append(file.split('-')[3])
-                carItem['品牌名称'].append(file.split('-')[4])
+                carItem['品牌ID'].append(file.split('-')[1])
+                carItem['品牌名称'].append(file.split('-')[2])
+                carItem['厂商ID'].append(file.split('-')[3])
+                carItem['厂商名称'].append(file.split('-')[4])
                 carItem['车系ID'].append(file.split('-')[5])
                 carItem['车系名称'].append(file.split('-')[6])
-                carItem['车型ID'].append(file.split('-')[5])
-                carItem['车型名称'].append(file.split('-')[6])
+                # carItem['车型ID'].append(file.split('-')[5])
+                # carItem['车型名称'].append(file.split('-')[6])
             else:
                 try:
                     try:
@@ -513,8 +519,10 @@ class Spider:
                     for car in param['paramitems']:
                         carItem[car['name']] = []
                         carItem['首字母'].append(file.split('-')[0])
-                        carItem['品牌ID'].append(file.split('-')[3])
-                        carItem['品牌名称'].append(file.split('-')[4])
+                        carItem['品牌ID'].append(file.split('-')[1])
+                        carItem['品牌名称'].append(file.split('-')[2])
+                        carItem['厂商ID'].append(file.split('-')[3])
+                        carItem['厂商名称'].append(file.split('-')[4])
                         carItem['车系ID'].append(file.split('-')[5])
                         carItem['车系名称'].append(file.split('-')[6])
                         for ca in car['valueitems']:
@@ -569,7 +577,7 @@ class Spider:
 
             for row in range(startRow, endRowNum):
                 # md5 加密
-                md5data = ''.join([carItem.get(i)[0] for i in ['品牌名称', '轴距(mm)', '长*宽*高(mm)'] if carItem.get(i)])
+                md5data = ''.join([carItem.get(i)[0] for i in ['轴距(mm)', '长度(mm)', '宽度(mm)', '高度(mm)', '品牌名称'] if carItem.get(i)])
                 mdbMd5 = self.updateMd5(md5data)
                 data = list()
                 # 循环表头
@@ -589,6 +597,8 @@ class Spider:
                     # print(context)
                     # worksheet.write_string(row, colNum, context)
                 data.append(mdbMd5)
+                if len(data) != 262:
+                    continue
                 # 连接数据库
                 db = MySql()
                 db.create(tuple(data))
@@ -612,7 +622,7 @@ class Spider:
         # self.get_car_parser()
         count = 0
         for u in self.get_model():
-            # 品牌首字母,品牌ID,品牌名称,车系ID,车系名称,车型ID,车型名称
+            # 品牌首字母,品牌ID,品牌名称,厂商ID,厂商名称,车系ID,车系名称
             brand_l, che_id, brand_n, car_l, car_n, model_l, model_n = u
             brand_l = str(brand_l).replace('-', '')
             che_id = str(che_id).replace('-', '')
@@ -661,7 +671,7 @@ class MySql:
             'port': 3306,
             'user': 'root',
             'password': 'root',
-            'db': 'auto',
+            'db': 'autodatebase',
             'charset': 'utf8'
         }
         """获取连接对象和执行对象"""
@@ -671,7 +681,7 @@ class MySql:
     def create(self, content):
         """数据写入"""
         try:
-            sql = "INSERT INTO autodatebase VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
+            sql = "INSERT INTO autodatebase VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
             affectedcount = self.cursor.execute(sql, content)
 
             # 提交数据库事务
@@ -689,5 +699,5 @@ class MySql:
 
 if __name__ == '__main__':
     spider = Spider()
-    spider.run()
-    # spider.save_xls()
+    # spider.run()
+    spider.save_xls()

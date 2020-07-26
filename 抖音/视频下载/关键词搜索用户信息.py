@@ -12,16 +12,21 @@ import time
 ts = str(time.time()).split(".")[0]
 _rticket = str(time.time() * 1000).split(".")[0]
 headers={
-        "X-Gorgon": '0404a0d802048185c98e95e9f257fed99bb4fbb9cf0019714e85',
-        "X-Khronos": ts,
+        "X-Gorgon": '0401181f0005ee06e827f3dea69ea60721e95e214bf5cb671580',
+        "X-Khronos": '1595740375',
         "sdk-version":"1",
         "Accept-Encoding": "gzip",
         "X-SS-REQ-TICKET": _rticket,
-        "Host": "search-hl.amemv.com",
+        "Host": "api3-normal-c-lq.amemv.com",
         "Connection": "Keep-Alive",
-        'User-Agent': 'okhttp/3.10.0.1',
-        "x-tt-token": '0066d7f0c5f866ecfa0e3e0f6e55d8a49464f44daeaadcaaa7eaee497bcfb624f6f49690618c4329c7423eef0727d5256a17'
+        'User-Agent': 'com.ss.android.ugc.aweme/100601 (Linux; U; Android 5.1.1; zh_CN; 2016060; Build/NMF26X; Cronet/TTNetVersion:71e8fd11 2020-06-10 QuicVersion:7aee791b 2020-06-05)',
+        "Cookie": 'Cookie: d_ticket=bbec46a7884665743fd1f9693d0f14cb6c02e; odin_tt=b24c5d0481942d8e00ff3b9a139348eed29923939173469f2e0ffe2557b78f212590ce7f4cda13fcd4afadd9cc8a0753f86023a77cc77cc702b8ad945c06e02d; sessionid=80fe8a2a2a8c7baff8e5d2da2092888b; sessionid_ss=80fe8a2a2a8c7baff8e5d2da2092888b; sid_guard=80fe8a2a2a8c7baff8e5d2da2092888b%7C1594372141%7C5184000%7CTue%2C+08-Sep-2020+09%3A09%3A01+GMT; sid_tt=80fe8a2a2a8c7baff8e5d2da2092888b; uid_tt=bd1a0d4d5cdacb8304f8fb9a2c3e63e3; uid_tt_ss=bd1a0d4d5cdacb8304f8fb9a2c3e63e3; ttreq=1$ab17801b49513ba8103d052e8628458c25fae48c'
       }
+
+url = 'https://api3-normal-c-lq.amemv.com/aweme/v2/comment/list/?aweme_id=6852998173003238664&cursor=0&count=40&address_book_access=2&gps_access=1&forward_page_type=1&channel_id=0&city=0&hotsoon_filtered_count=0&hotsoon_has_more=0&follower_count=0&is_familiar=0&page_source=0&os_api=22&device_type=2016060&ssmix=a&manifest_version_code=100601&dpi=240&uuid=569411980771663&app_name=aweme&version_name=10.6.0&ts=1595740335&cpu_support64=false&storage_type=0&app_type=normal&ac=wifi&host_abi=armeabi-v7a&update_version_code=10609900&channel=douyin_tengxun_wzl&_rticket=1595740335305&device_platform=android&iid=0&version_code=100600&mac_address=58:cb:4f:c3:47:bb&cdid=0aca5132-4d51-610e-fdef-4a67898c868e&openudid=ff8988ecf289aa00&device_id=0&resolution=720*1280&os_version=5.1.1&language=zh&device_brand=xiaomi&aid=1128&mcc_mnc=46007'
+print(headers)
+a = requests.get(url=url, headers=headers)
+print(a)
 
 count = 0
 
@@ -128,5 +133,6 @@ def model_csv(data):
 
 
 if __name__ == '__main__':
-    key = input('请输入关键词：')
-    get_video(key)
+    # key = input('请输入关键词：')
+    # get_video(key)
+    pass

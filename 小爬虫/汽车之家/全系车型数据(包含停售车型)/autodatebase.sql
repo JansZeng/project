@@ -1,26 +1,26 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 汽车之家
+Source Server         : root
 Source Server Version : 50726
-Source Host           : localhost:3306
-Source Database       : autohome
+Source Host           : 127.0.0.1:3306
+Source Database       : autodatebase
 
 Target Server Type    : MYSQL
 Target Server Version : 50726
 File Encoding         : 65001
 
-Date: 2020-07-21 17:52:56
+Date: 2020-07-23 18:03:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for 国内在售(停售)车型参数2020.5.14
+-- Table structure for autodatebase
 -- ----------------------------
 DROP TABLE IF EXISTS `autodatebase`;
 CREATE TABLE `autodatebase` (
-  `首字母` text COLLATE utf8_unicode_ci,  
+  `首字母` text COLLATE utf8_unicode_ci,
   `车型名称` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `厂商指导价(元)` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `厂商` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -272,6 +272,8 @@ CREATE TABLE `autodatebase` (
   `工信部续航里程(km)` text COLLATE utf8_unicode_ci,
   `品牌ID` text COLLATE utf8_unicode_ci,
   `品牌名称` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `厂商ID` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `厂商名称` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `车系ID` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `车系名称` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `车型ID` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
