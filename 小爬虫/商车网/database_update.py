@@ -30,11 +30,11 @@ class DatabaseUpdate:
                 continue
             initial = pinyin.get(real_brand_name).capitalize()[0]  # 新品牌首字母
             create_sql = "update vehicle_brand_info set initial='{}' where id={};".format(initial, id)
-            if self.db.create(sql=create_sql):  # 更新首字母
-                print(f'vehicle_brand_info表 {id} {initial} 数据更新完成')
-                # 2:更新 cndatebase md5值
-                self.update_md5(id, real_brand_name)
-                print(f'成功 更新：{len(self.md5s)} 条数据')
+            self.db.create(sql=create_sql)  # 更新首字母
+            print(f'vehicle_brand_info表 {id} {initial} 数据更新完成')
+            # 2:更新 cndatebase md5值
+            self.update_md5(id, real_brand_name)
+            print(f'成功 更新：{len(self.md5s)} 条数据')
         print(f'vehicle_brand_info表 数据更新完成')
 
     def update_md5(self, id, real_brand_name):
@@ -43,7 +43,7 @@ class DatabaseUpdate:
         sql = "SELECT id,wheel_base, vehicle_length, vehicle_wide, vehicle_high FROM cndatebase WHERE brand_name={};".format(id)  # 查询real_brand_name字段有值项
         fetchall = self.db.query(sql)
         for fetch in fetchall:
-            md5data = real_brand_name + ''.join([i.split(',')[0] for i in fetch[1:]])
+            md5data = ''.join([i.split(',')[0] for i in fetch[1:]]) + real_brand_name
             mdbMd5 = self.updateMd5(md5data)
             # 更新md5
             create_sql = "update cndatebase set md5='{}' where id={};".format(mdbMd5, fetch[0])
@@ -152,4 +152,4 @@ class MySql:
 if __name__ == '__main__':
     spider = DatabaseUpdate()
     spider.update_initial()
-    spider.inquire_md5()
+    # spider.inquire_md5()

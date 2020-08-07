@@ -48,8 +48,8 @@ class Spider:
         # self.x = self.driver.get_window_size()['width']  # 宽
         # self.y = self.driver.get_window_size()['height']  # 长
         # print(self.x, self.y)
-        self.one = 'com.ss.android.ugc.aweme.lite:id/pp'  # 评论数量ID
-        self.two = 'com.ss.android.ugc.aweme.lite:id/bhn'  # 评论数据模块ID
+        self.one = 'com.ss.android.ugc.aweme.lite:id/wl'  # 评论数量ID
+        self.two = 'com.ss.android.ugc.aweme.lite:id/ciq'  # 评论数据模块ID
 
     def slide(self):
         """
@@ -106,7 +106,7 @@ class Spider:
                         try:
                             con = WebDriverWait(self.driver, 5, 1, AttributeError).until(
                                 EC.presence_of_all_elements_located((By.XPATH,
-                                                                     '//android.support.v7.widget.RecyclerView [@resource-id="com.ss.android.ugc.aweme.lite:id/bhn"]/android.widget.FrameLayout/android.widget.TextView')))
+                                                                     '//android.support.v7.widget.RecyclerView [@resource-id="com.ss.android.ugc.aweme.lite:id/ciq"]/android.widget.FrameLayout/android.widget.TextView')))
                             # print(con, len(con))
                             if con:
                                 print('到达底部,切换下一个视频')
@@ -236,6 +236,7 @@ def main(udid, port):
             spider.wait = WebDriverWait(spider.driver, 60, 1)
             spider.slide()
         except Exception as e:
+            print(e)
             # 重启mitmdump服务
             # monitor = Monitor()
             # monitor.switch_mitmdump()
@@ -290,7 +291,7 @@ if __name__ == '__main__':
     if monitors.run():
         os._exit(0)
     # 效验代理
-    proxy()
+    # proxy()
     # 读取连接设备
     success = adb_devices()
     # 启动脚本程序

@@ -48,9 +48,9 @@ class Spider:
         # self.x = self.driver.get_window_size()['width']  # 宽
         # self.y = self.driver.get_window_size()['height']  # 长
         # print(self.x, self.y)
-        # 12.0
-        self.one = 'com.ss.android.ugc.aweme:id/acl'  # 评论数量ID
-        self.two = 'com.ss.android.ugc.aweme:id/ety'  # 评论数据模块ID
+        # 12.2
+        self.one = 'com.ss.android.ugc.aweme:id/adm'  # 评论数量ID
+        self.two = 'com.ss.android.ugc.aweme:id/exh'  # 评论数据模块ID
         # 12.1
         # self.one = 'com.ss.android.ugc.aweme:id/ad5'  # 评论数量ID
         # self.two = 'com.ss.android.ugc.aweme:id/ev0'  # 评论数据模块ID
@@ -60,7 +60,16 @@ class Spider:
         滑动
         :return:
         """
+        # 根据时间选择退出刷新当前视频
+        new_time = (datetime.datetime.now() + datetime.timedelta(minutes=60)).strftime('%Y-%m-%d %H:%M:%S')
+        # print(new_time)
+
         while True:
+            start_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            # print(start_time)
+            if new_time < start_time:
+                print('一个小时重启一次')
+                os._exit(0)
             proxy()
             print('定位评论按钮')
             comment = self.wait.until(EC.presence_of_element_located((By.ID, self.one)))
@@ -233,7 +242,7 @@ def main(udid, port):
                 "automationName": "Uiautomator1",  # 引擎错误时添加此项 uiautomator2ServerLaunchTimeout'
                 "platformName": "Android",
                 "deviceName": udid,
-                "adbExecTimeout": "100000",  # adb指令超时时间，默认是20000毫秒
+                "adbExecTimeout": "40000",  # adb指令超时时间，默认是20000毫秒
                 "appPackage": "com.ss.android.ugc.aweme",
                 "appActivity": ".splash.SplashActivity",
                 "udid": udid,  # 根据模拟器名称启动
@@ -247,12 +256,12 @@ def main(udid, port):
             spider.slide()
         except Exception as e:
             print(e)
-            count += 1
-            if count > 3:
-                return
+            # count += 1
+            # if count > 3:
+            #     return
             # 重启mitmdump服务
-            monitor = Monitor()
-            monitor.switch_mitmdump()
+            # monitor = Monitor()
+            # monitor.switch_mitmdump()
             continue
 
 
@@ -304,17 +313,15 @@ if __name__ == '__main__':
     if monitors.run():
         os._exit(0)
     # 效验代理
-    proxy()
+    # proxy()
     # 读取连接设备
     success = adb_devices()
     # 启动脚本程序
-    monitor = Monitor()
-    monitor.run()
+    # monitor = Monitor()
+    # monitor.run()
     port = 4723
     for i in success:
         s = threading.Thread(target=main, args=(i, port))
         port += 2
         s.start()
         time.sleep(20)
-
-

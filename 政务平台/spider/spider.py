@@ -5,14 +5,16 @@
 # 创建时间 ：2019/8/10 14:07
 # 更新记录 登录页面改版
 """
+2020-8-5
+更新：跨站请求错误
+    手机号图片识别数据错乱
+"""
+"""
 pytesseract调用错误解决方法
 https://blog.csdn.net/qq_38486203/article/details/82856422
 修改pytesseract.py
 tesseract_cmd = 修改成tesseract的安装路径，使pytesseract能够调用tesseract
 可以直接拷贝tesseract安装文件 不用安装
-"""
-"""
-分辨率 1280 * 720
 """
 import os
 import sys
@@ -108,21 +110,15 @@ class Spider:
             enter = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.gd-btn-primary')))
             enter.send_keys(Keys.ENTER)
 
-            time.sleep(2)
-            try:
-                prompt = self.driver.find_element_by_xpath('/html/body/div[2]/div[2]/div/div').text
-                if prompt == '图形验证码错误':
-                    print('验证码输入错误：重试')
-                    self.spot_code(just_flag=True)
-                    if count > 2:
-                        print('登录失败，联系开发者！！！')
-                        exit()
-                    count += 1
-                print('登录成功1')
-                break
-            except:
-                print('登录成功')
-                break
+            print('登录成功')
+            time.sleep(5)
+
+            # 跨站请求错误！
+            page = self.driver.page_source
+            if '跨站请求错误' in page:
+                self.driver.refresh()
+                print('处理跨站请求')
+            return
 
     def get_code_image(self, login):
         """
@@ -205,7 +201,7 @@ class Spider:
             print('打码平台验证码识别中...')
             # 判断登录还是查询
             if login:
-                rsp = fateadm_api.TestFunc(pred_type_id='304000003')
+                rsp = fateadm_api.TestFunc(pred_type_id='304000004')
             else:
                 rsp = fateadm_api.TestFunc()
             if count > 3:
@@ -241,7 +237,7 @@ class Spider:
             # 验证码识别
             self.get_code_image(False)
             code = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#validCode')))
-            spot_code = self.spot_code(login=True)
+            spot_code = self.spot_code()
             print('验证码：{}'.format(spot_code))
             code.send_keys(spot_code)
             # code.send_keys(input('1.py'))
@@ -310,7 +306,7 @@ class Spider:
                         LSQYBG.click()
                         phone, number = self.process_phone(pre_type=2)
                         return phone, number
-                    elif pre_type == '有限责任公司':
+                    elif pre_type == '有限责任公司' or pre_type == '有限责任公司（自然人独资）':
                         Farendaibiao = self.wait.until(
                             EC.presence_of_element_located((By.XPATH, '//*[@id="FaDingDaiBiaoRenXinXi"]/div')))
                         Farendaibiao.click()
@@ -390,7 +386,7 @@ class Spider:
             phone_image = im.crop((300, 165, 400, 185))
             number_image = im.crop((885, 85, 1035, 105))
         elif pre_type == 3:
-            phone_image = im.crop((300, 335, 400, 355))
+            phone_image = im.crop((300, 340, 395, 355))
             number_image = im.crop((885, 260, 1035, 280))
         elif pre_type == 4:
             phone_image = im.crop((300, 145, 400, 165))

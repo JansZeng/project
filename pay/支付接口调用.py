@@ -13,7 +13,7 @@ import requests
 def getQRcode():
     """请求支付二维码"""
     # 接口地址
-    url = 'http://pay.bafangrenpin.com/index/api/getQRcode'
+    url = 'http://pay.ccccc.run/index/api/getQRcode'
     # 订单号 由当前时间的年月日时分秒和五位随机数字组成。一个订单号只能调用一次接口，每次调用接口应该更新订单号
     order_id = f"{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}{random.randint(10000, 99999)}"
     # 金额
@@ -42,23 +42,21 @@ def getQRcode():
     print('支付二维码保存成功!')
 
 
-# def test():
-#     url = 'http://www.dongdongmeiche.cn/ceshi'  # django api路径
-#     headers = {  # 请求头 是浏览器正常的就行 就这里弄了一天 - -！
-#         'User-agent': 'none/ofyourbusiness',
-#         'Spam': 'Eggs'
-#     }
-#     parms = {
-#         'order_id': '2020052323563298218',  # 订单号
-#         'money': '5.18',  # 订单金额
-#         'trxday': '20200523',  # 交易日期
-#         'trxstatus': '0000',  # 0000表示成功 3XXXX交易失败
-#         'trxresult': '交易成功',  # 交易结果
-#         }
-#     resp = requests.post(url, data=parms, headers=headers).json()
-#     print(resp)
+def test():
+    # 订单号 由当前时间的年月日时分秒和五位随机数字组成。一个订单号只能调用一次接口，每次调用接口应该更新订单号
+    order_id = f"{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}{random.randint(10000, 99999)}"
+    # md5加密串 密钥key,order_id订单号,money金额,return_url回调地址,method支付方法依次拼接md5加密  密钥key固定为sdl2fL3KH3J3G92327Kh
+    key = f'sdl2fL3KH3J3G92327Kh{order_id}'
+    print(key)
+    md5str = hashlib.md5(key.encode()).hexdigest()
+    print(md5str)
+    url = f'http://pay.ccccc.run/index/api/getQRcode?order_id={order_id}&md5str={md5str}'
+    print(url)
+    resp = requests.get(url)
+    print(resp.text)
+    # print(resp.json())
 
 
 if __name__ == '__main__':
-    getQRcode()
-    # test()
+    # getQRcode()
+    test()

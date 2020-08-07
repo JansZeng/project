@@ -455,7 +455,6 @@ class Spider:
             carItem['车型ID'] = []  # 车型ID
             carItem['车型名称'] = []  # 车型ID
 
-            print(file)
             # 判断文件大小是否为空 os.path.getsize 返回指定文件大小
             if not os.path.getsize(rootPath + '/' + file):
                 carItem['首字母'].append(file.split('-')[0])
@@ -498,6 +497,7 @@ class Spider:
                         color = d
                     for e in innerColorRe:
                         innerColor = e
+                    # print(config)
                     config = json.loads(config)
                     option = json.loads(option + '}')
                     bag = json.loads(bag)
@@ -575,10 +575,7 @@ class Spider:
             # 计算起止行号
             endRowNum = startRow + len(carItem['车型ID'])  # 车辆款式记录数
 
-            for row in range(startRow, endRowNum):
-                # md5 加密
-                md5data = ''.join([carItem.get(i)[0] for i in ['轴距(mm)', '长度(mm)', '宽度(mm)', '高度(mm)', '品牌名称'] if carItem.get(i)])
-                mdbMd5 = self.updateMd5(md5data)
+            for row in range(len(carItem['品牌名称'])):
                 data = list()
                 # 循环表头
                 for Head in Header.keys():
@@ -587,7 +584,7 @@ class Spider:
                         data.append('-')
                         continue
                     try:
-                        context = str(carItem[Head][row - startRow])
+                        context = str(carItem[Head][row])
                         data.append(str(context))
                         # colNum = Header[col]  # 根据项目名称查询列数
                     except Exception as e:
@@ -596,6 +593,11 @@ class Spider:
                     # 写入数据 row行 colNum列 context内容
                     # print(context)
                     # worksheet.write_string(row, colNum, context)
+                # md5 加密
+                md5data = ''.join(
+                    [carItem.get(i)[row] for i in ['轴距(mm)', '长度(mm)', '宽度(mm)', '高度(mm)', '品牌名称'] if
+                     carItem.get(i)])
+                mdbMd5 = self.updateMd5(md5data)
                 data.append(mdbMd5)
                 if len(data) != 262:
                     continue
@@ -671,7 +673,7 @@ class MySql:
             'port': 3306,
             'user': 'root',
             'password': 'root',
-            'db': 'autodatebase',
+            'db': 'test',
             'charset': 'utf8'
         }
         """获取连接对象和执行对象"""

@@ -114,6 +114,21 @@ class Spider:
             year = i['Value']  # 年份
             yield year
 
+    @retry(stop_max_attempt_number=3)
+    def get_tid(self, ProductID, displa, year):
+        """获取tid拼接保养数据url"""
+        url = f'https://item.tuhu.cn/Car/SelectVehicleSalesName?callback=__GetCarBrands__&VehicleID={ProductID}&PaiLiang={displa}&Nian={year}'
+        res = requests.get(url, headers=self.headers, timeout=5)
+        content = res.text.replace('__GetCarBrands__(', '').strip(')')
+        content = json.loads(content)
+        SalesName = content.get('SalesName')
+        if not SalesName:
+            return False
+        for sale in SalesName:
+            tid = sale['TID']
+            name = sale['Name']
+            yield tid, name
+
     def get_maintenance(self, url):
         """
         获取保养信息 机油参数数据
@@ -127,7 +142,7 @@ class Spider:
         # 加载JavaScript，在Chromium里重新加载响应，并用最新获取到的HTML替换掉原来的HTML  首次使用，自动下载chromium
         # https://cncert.github.io/requests-html-doc-cn/#/?id=render 中文文档
         # retries重试三次 wait等待一秒加载数据
-        print('加载javascript')
+        # print('加载javascript')
         try:
             r.html.render(retries=5)
             # 定位机油参数数据
@@ -156,7 +171,7 @@ class Spider:
                 motor_oil_money = machine_filter_money = '官方暂无数据'
             # 关闭建立的session链接
             session.close()
-            print(f'关闭建立的session')
+            # print(f'关闭建立的session')
             return dosage, motor_oil, motor_oil_money, level, machine_filter, machine_filter_money
         except Exception as e:
             # 关闭建立的session链接
@@ -172,10 +187,10 @@ class Spider:
         data : 字典格式 必须和表头长度一样
         :return:
         """
-        path = os.path.abspath('.') + r'/全系车型机油数据.xls'
+        path = os.path.abspath('.') + r'/数据.xls'
         if not os.path.exists(path):
             # 创建一个新DataFrame并添加表头
-            Header = ['首字母', '品牌', '厂商', '型号', '型号ID', '排量', '年份', '轮胎尺寸', '机油容量',
+            Header = ['首字母', '品牌', '厂商', '型号', '车型', '型号ID', '排量', '年份', '轮胎尺寸', '机油容量',
                       '机油型号', '机油价格', '合成级别', '机滤型号', '机滤价格', '获取时间']
             df = pd.DataFrame(columns=Header)
         else:
@@ -236,15 +251,12 @@ class Spider:
                     first, brand, BrandType, CarName, ProductID, Tires = u
                     for displa in self.get_displacement(ProductID):  # 根据型号ID获取排量信息
                         for year in self.get_year(ProductID, displa):  # 根据型号ID、排量信息 获取年份
-                            url = f'https://by.tuhu.cn/baoyang/{ProductID}/pl{displa}-n{year}.html'
-                            # 保存请求保养参数的url
-                            with open('url.txt', 'a+', encoding='utf-8') as f:
-                                f.write(f'{first},{brand},{BrandType},{CarName},{ProductID},{displa},{year},{Tires},{url}')
-                                f.write('\n')
-                            print(f'第:{self.count} 条数据保存成功!')
-                            self.count += 1
+                            for tid, name in self.get_tid(ProductID, displa, year):  # 根据型号ID、排量信息 获取tid
+                                url = f'https://by.tuhu.cn/baoyang/{ProductID}/pl{displa}-n{year}.html?TID={tid}'
+                                # 请求保养页面获取数据
+                                self.main(first, brand, BrandType, CarName, ProductID, displa, year, name, Tires, url)
 
-    def main(self):
+    def main(self, first, brand, BrandType, CarName, ProductID, displa, year, name, Tires, url):
         """
         请求保养页面 获取机油数据
         :return:
@@ -253,51 +265,26 @@ class Spider:
             contents = f.readlines()
             contents = [i.strip() for i in contents]
 
-        new_time = (datetime.datetime.now() + datetime.timedelta(minutes=10)).strftime('%Y-%m-%d %H:%M:%S')
-        print(new_time)
-        for line in open("url.txt", 'r', encoding='utf-8'):
-            # 十分钟调用一次Linux系统命令
-            # start_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            # print(start_time)
-            # if new_time > start_time:
-            #     self.shell()
-            #     time.sleep(3)
-            #     print(f'清理缓存后系统状态：')
-            #     self.shell()
-            #     new_time = (datetime.datetime.now() + datetime.timedelta(minutes=10)).strftime('%Y-%m-%d %H:%M:%S')
-
-            content = line.split(',')
-            first = content[0]
-            brand = content[1]
-            BrandType = content[2]
-            CarName = content[3]
-            ProductID = content[4]
-            displa = content[5]
-            year = content[6]
-            Tires = content[7]
-            url = content[-1].strip()
-            # 判断是否已经下载过
-            if url in contents:
-                print(f'已下载跳过：{url}')
-                continue
-            tenance = self.get_maintenance(url)
-            if not tenance:
-                continue
-            dosage, motor_oil, motor_oil_money, level, machine_filter, machine_filter_money = tenance
-            data = {'首字母': first, '品牌': brand, '厂商': BrandType, '型号': CarName, '型号ID': ProductID,
-                    '排量': displa, '年份': year, '轮胎尺寸': Tires, '机油容量': dosage, '机油型号': motor_oil,
-                    '机油价格': motor_oil_money, '合成级别': level, '机滤型号': machine_filter,
-                    '机滤价格': machine_filter_money, '获取时间': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-            # 数据写入文件
-            self.save_xls(data)
-            # 保存下载记录
-            self.record(url)
-            print(f'第:{self.count} 条数据保存成功!')
-            self.count += 1
+        # 判断是否已经下载过
+        if url in contents:
+            print(f'已下载跳过：{url}')
+            return
+        tenance = self.get_maintenance(url)
+        if not tenance:
+            return
+        dosage, motor_oil, motor_oil_money, level, machine_filter, machine_filter_money = tenance
+        data = {'首字母': first, '品牌': brand, '厂商': BrandType, '型号': CarName, '车型': name, '型号ID': ProductID,
+                '排量': displa, '年份': year, '轮胎尺寸': Tires, '机油容量': dosage, '机油型号': motor_oil,
+                '机油价格': motor_oil_money, '合成级别': level, '机滤型号': machine_filter,
+                '机滤价格': machine_filter_money, '获取时间': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+        # 数据写入文件
+        self.save_xls(data)
+        # 保存下载记录
+        self.record(url)
+        print(f'第:{self.count} 条数据保存成功!')
+        self.count += 1
 
 
 if __name__ == '__main__':
     spider = Spider()
-    # spider.run()
-    spider.main()
-
+    spider.run()
