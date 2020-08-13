@@ -18,6 +18,14 @@ from fake_useragent import UserAgent
 from Sqlite_DB import DBTool
 
 
+"""
+将需要爬取的车型写入配置文件
+model = 车型ID
+即可开启爬虫
+注：启用多线程不要太快容易被封，最好使用代理
+"""
+
+
 print(os.path.abspath(__file__))  # 当前文件绝对路径
 PATH = os.getcwd()  # 文件路径
 
@@ -222,18 +230,18 @@ class Spider:
         Interior_content = self.is_null(self.content[eid].get('内饰'))  # 内饰内容
         Costeffective_content = self.is_null(self.content[eid].get('性价比'))  # 性价比内容
 
-        # data = [[userId, userName, model, specid, brandname, seriesname, specname, boughtprovincename, boughtcityname,
-        #          dealername, boughtdate, boughtPrice, actualOilConsumption, drivekilometer, satisfaction_content,
-        #          Dissatisfied_content, spaceScene, space_content, powerScene, power_content, maneuverabilityScene,
-        #          Control_content, oilScene, oilScene_content, comfortablenessScene, Comfort_content, apperanceScene,
-        #          Exterior_content, internalScene, Interior_content,
-        #          costefficientScene, Costeffective_content, purpose]]
-
-        data = (eid, userId, userName, model, specid, brandname, seriesname, specname, boughtprovincename, boughtcityname,
+        data = [[userId, userName, model, specid, brandname, seriesname, specname, boughtprovincename, boughtcityname,
                  dealername, boughtdate, boughtPrice, actualOilConsumption, drivekilometer, satisfaction_content,
                  Dissatisfied_content, spaceScene, space_content, powerScene, power_content, maneuverabilityScene,
                  Control_content, oilScene, oilScene_content, comfortablenessScene, Comfort_content, apperanceScene,
-                 Exterior_content, internalScene, Interior_content, costefficientScene, Costeffective_content, purpose)
+                 Exterior_content, internalScene, Interior_content,
+                 costefficientScene, Costeffective_content, purpose]]
+
+        # data = (eid, userId, userName, model, specid, brandname, seriesname, specname, boughtprovincename, boughtcityname,
+        #          dealername, boughtdate, boughtPrice, actualOilConsumption, drivekilometer, satisfaction_content,
+        #          Dissatisfied_content, spaceScene, space_content, powerScene, power_content, maneuverabilityScene,
+        #          Control_content, oilScene, oilScene_content, comfortablenessScene, Comfort_content, apperanceScene,
+        #          Exterior_content, internalScene, Interior_content, costefficientScene, Costeffective_content, purpose)
 
         return data
 
@@ -303,8 +311,8 @@ class Spider:
             # 第三步 获取口碑详情数据
             data = self.get_content(model, eid, model_l)
             # 第四步 保存数据
-            # self.scv_data(data)
-            self.save_sql(data)
+            self.scv_data(data)
+            # self.save_sql(data)
             log_init().info(f'{model} {model_l} 口碑：{eid} 数据保存成功!')
 
         # 保存获取记录
@@ -321,9 +329,11 @@ class Spider:
         pool = Pool(num)
         # 第一步 配置文件读取车型ID
         # for model in self.red_ini():
-        #     model_l = '111'
+        #     model_l = '3788'
         for models in self.get_model():
             model, model_l = models['I'], models['N']
+            print(model, model_l)
+
             # 启动线程
             pool.apply_async(self.run, (model, model_l))
 

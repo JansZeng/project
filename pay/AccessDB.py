@@ -92,9 +92,6 @@ class AccessMdb(object):
             return []
 
 
-
-
-
 # if __name__ == '__main__':
     # 打印数据库中的所有表的表名
     # print('打印mdb数据库中的所有表的表名')

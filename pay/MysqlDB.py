@@ -9,7 +9,8 @@ import pymysql
 class DBTool(object):
     def __init__(self):
         db_config = {
-            'host': '118.190.146.234',
+            # 'host': '*******',
+            'host': '*********',
             'port': 3306,
             'user': 'pay',
             'password': 'pay123456',
@@ -33,11 +34,11 @@ class DBTool(object):
                 elif type(param) is tuple:
                     count = self.cursor.execute(sql, param)
                 else:
-                    print('数据类型错误')
+                    # print('数据类型错误')
                     return
             if count > 0:
                 # 返回插入数据数量
-                print('成功更新{0}条数据'.format(count))
+                # print('成功写入{0}条数据'.format(count))
                 # 提交数据库事务
                 self.conn.commit()
                 return count

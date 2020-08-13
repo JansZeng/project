@@ -16,10 +16,12 @@ START = 0
 def spider(start):
     headers = {'User-Agent': str(UserAgent().random),
                # 必须加上此参数 不然获取不到信息
-               'referer': 'https://item.jd.com/100006808184.html'}
+               'referer': 'https://item.jd.com/100013205936.html'}
     count = 1
-    for i in range(start, 100):
-        url = 'https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv2222&productId=100006808184&score=0&sortType=5&page={}&pageSize=10&isShadowSku=0&rid=0&fold=1'.format(i)
+    for i in range(start, 2):
+        # url = 'https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv2222&productId=100006808184&score=0&sortType=5&page={}&pageSize=10&isShadowSku=0&rid=0&fold=1'.format(i)
+        url = 'https://club.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98&productId=100013205936&score=0&sortType=5&page=1&pageSize=10&isShadowSku=0&rid=0&fold=1'
+
         print('第[{}]页评论 开始爬取'.format(i+1))
         if count % 20 == 0:
             print('休眠3秒')
@@ -29,7 +31,7 @@ def spider(start):
         response = requests.get(url, headers=headers)
         # response = requests.get(url, headers=headers, verify=False)
         html = response.content.decode('gbk')
-        html = html.replace('fetchJSON_comment98vv2222(', '').replace(');', '')
+        html = html.replace('fetchJSON_comment98(', '').replace(');', '')
         html = json.loads(html)
         # 提取数据
         # 评论列表
@@ -56,10 +58,10 @@ def spider(start):
             # 评分
             score = comment['score']
             # 会员级别
-            userLevelName = comment['userLevelName']
+            # userLevelName = comment['userLevelName']
             # 点赞
             usefulVoteCount = comment['usefulVoteCount']
-            data.append([ID, referenceName, content, usefulVoteCount, score, nickname, userLevelName, referenceTime])
+            data.append([ID, referenceName, content, usefulVoteCount, score, nickname, referenceTime])
         scv_data(data)
         print('第[{}]页数据保存成功'.format(i+1))
         print('*'*50)
@@ -69,12 +71,13 @@ def spider(start):
 
 def scv_data(data):
     """保存为csv"""
+    print(data)
     with open("3.csv", "a+", encoding='utf-8', newline="") as f:
         k = csv.writer(f, delimiter=',')
         with open("3.csv", "r", encoding='utf-8', newline="") as f1:
             reader = csv.reader(f1)
             if not [row for row in reader]:
-                k.writerow(['商品ID', '产品型号', '评论内容', '点赞', '评分', '评论id', '会员级别', '评论时间'])
+                k.writerow(['商品ID', '产品型号', '评论内容', '点赞', '评分', '评论id', '评论时间'])
                 k.writerows(data)
             else:
                 k.writerows(data)

@@ -1,16 +1,41 @@
-"""
-流量脚本
-问题：phantomjs path 错误
-解决：browser = webdriver.PhantomJS(executable_path=r'C:\Users\lyh\Anaconda2\phantomjs-2.1.1-windows\bin\phantomjs.exe')
-下载地址：http://phantomjs.org/download.html解压把文件设置文件路径
-"""
-"""
-urls 写入 需要访问的网址链接
+# """
+# 流量脚本
+# 问题：phantomjs path 错误
+# 解决：browser = webdriver.PhantomJS(executable_path=r'C:\Users\lyh\Anaconda2\phantomjs-2.1.1-windows\bin\phantomjs.exe')
+# 下载地址：http://phantomjs.org/download.html解压把文件设置文件路径
+# """
 
-多线程启动： 需要启动几个线程 就一次请求几个IP
-IP代理：飞猪代理 https://www.feizhuip.com/
-"""
+# coding=utf-8
+# from selenium import webdriver
+#
+# # 代理服务器
+# proxyHost = "218.91.7.6"
+# proxyPort = "28803"
+# proxyType = 'https'  # socks5
+#
+# # 代理隧道验证信息
+# service_args = [
+#     "--proxy-type=%s" % proxyType,
+#     "--proxy=%(host)s:%(port)s" % {
+#         "host": proxyHost,
+#         "port": proxyPort,
+#     }
+# ]
+# # 要访问的目标页面
+# targetUrl = "http://www.ccccc.run"
+# driver = webdriver.PhantomJS(executable_path=r'C:\Users\Administrator\Desktop\phantomjs-2.1.1-windows\bin\phantomjs.exe', service_args=service_args)
+# driver.get('http://www.ccccc.run/ip')
+# print(driver.page_source)
+# time.sleep(3)
+#
+# driver.get(targetUrl)
+#
+# print(driver.title)
+# driver.quit()
 
+# if __name__ == '__main__':
+#     while True:
+#         test()
 import os
 import sys
 import time
@@ -80,7 +105,7 @@ class Proxy(object):
         options = webdriver.ChromeOptions()
         # 使用无头模式
         # options.add_argument('headless')
-        # options.add_experimental_option('mobileEmulation', {'deviceName': 'iPhone X'})  # 模拟iPhone X浏览
+        options.add_experimental_option('mobileEmulation', {'deviceName': 'iPhone X'})  # 模拟iPhone X浏览
         # 添加代理
         options.add_experimental_option('excludeSwitches', ['enable-logging'])  # 解决获取适配器失败
         options.add_argument(f"--proxy-server=http://{ip}")
@@ -91,37 +116,24 @@ class Proxy(object):
 
     def getpage(self, urls, ip, driver):
         # 检查代理ip
-        # driver.get('http://www.ccccc.run/ip')
+        # driver.get('http://ip.ccccc.run')
         # page_source = driver.page_source
+        # print(page_source)
         # if 'http://ccccc.run/ip' not in page_source:
         #     print('代理IP失效，切换下一个')
         #     return
         # print(driver.page_source)
         for url in urls:
             # 请求首页
-            log_init().info(f'{ip} 请求 {url} 首页')
             driver.get(url)
             title = driver.title
-            time.sleep(10000)
-            if '免费在线接码平台' not in title:
+            time.sleep(1.5)
+            log_init().info(title)
+            if '再见了，幼兒园！教育部正式宣布' not in title:
                 log_init().info(f'{ip} 失效，切换下一个')
                 return False
-            # log_init().info(driver.title)
-
-            # 请求详情页
-            # 随机休眠
-            sleep = random.randint(10, 30)
-            sleep1 = random.randint(60, 90)
-            log_init().info(f'{ip} 请求 {url} 详情页中 预计{sleep + 15 * 2 + sleep1}秒完成...')
-            time.sleep(sleep)
-
-            for i in range(random.randint(1, 3)):
-                driver.get(f'{url}/sim')
-
-                if '免费在线接码平台' not in driver.title:
-                    return True
-                time.sleep(random.randint(10, 20))
-            # time.sleep(sleep1)
+            log_init().info(f'{ip} 请求页面成功, 十秒后关闭')
+            time.sleep(15)
         return True
 
     def run(self, urls, ip):
@@ -147,8 +159,8 @@ class Proxy(object):
 def get_ip():
     """请求代理IP"""
     qty = 1
-    url = f'http://120.79.85.144/index.php/api/entry?method=proxyServer.tiqu_api_url&packid=2&fa=0&fetch_key=&groupid=0&qty={qty}&time=1&port=1&format=json&ss=5&css=&ipport=1&et=1&pi=1&co=1&pro=&city=&dt=1&auth=0&ipnum=10&userip=1&auth_key=fnp63K6ncap_p3XYhHWpaX6ieamEspeZs4uUs7mYkGqXfYfUu7plZ5O6eteZeM-wfnx5rA&usertype=22'
-    res = requests.get(url).json()
+    url = 'http://ip.ipjldl.com/index.php/api/entry?method=proxyServer.tiqu_api_url&packid=1&fa=0&fetch_key=&groupid=0&qty=5&time=1&port=1&format=json&ss=5&css=&ipport=1&et=1&pi=1&co=1&pro=&city=&dt=1&auth=0&ipnum=10&userip=1&auth_key=fnp63K6ncap_p3XYhHWpaX6ieamEspeZs4uUs7mYkGqXfYfUu7plZ5O6eteZeM-wfnx5rA&usertype=22'
+    res = requests.get(url, timeout=30).json()
     if not res.get('data'):
         log_init().info('获取代理ip失败')
         log_init().info(res.get('msg'))
@@ -164,9 +176,9 @@ def main():
     proxy = Proxy()
     count = 0
     # urls = ['http://www.ccccc.run', 'http://www.dongdongmeiche.com']
-    urls = ['https://www.visvn.cn/c.php?id=7317']
+    urls = ['http://m.euv2u.cn/3339968722586467742665239.action']
     while True:
-        if count >= 5:
+        if count >= 50:
             break
         # 创建线程对象
         thread_list = list()
