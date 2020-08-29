@@ -3,11 +3,10 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="291d998c-cbca-4789-9a0a-77a0b438fa5f" name="django64" url="http://127.0.0.1">
-        <fileTransfer host="127.0.0.1" port="1234" rootFolder="/home/pyvip/django64" accessType="SFTP">
+        <fileTransfer rootFolder="/home/pyvip/django64" accessType="SFTP" sshConfigId="b0cc743d-afb3-4af8-92e4-43141594ce58" sshConfig="django64">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="1234" />
         </fileTransfer>
       </webServer>
     </option>

@@ -1,0 +1,8 @@
+需求：
+1、根目录下通过后缀文.sln的文件名如：PROTOCOL.sln，定位到名称为PROTOCOL的目录
+
+2、在PROTOCOL目录中查找所有后缀为.c  .h文件的头文件（如：#include "..\interface\protocol_define.h"），将正斜杠‘\’全部改反斜杠‘/’。
+
+3、处理PROTOCOL/interface/protocol_interface.h文件，如果有#ifdef WIN32这行，把这行删除。
+
+4、将所有后缀为.c  .h文件转换为utf-8编码。

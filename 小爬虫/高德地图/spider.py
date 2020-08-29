@@ -33,7 +33,11 @@ def spider(keywords, city):
 
         data = []
         for poi in pois:
-            pname = poi['pname']  # 省份
+            tel = poi.get('tel')  # 电话
+            if not tel:
+                continue
+
+            pname = poi.get('pname')  # 省份
             pname = pname if len(pname) else None
 
             cityname = poi['cityname']  # 市
@@ -42,17 +46,14 @@ def spider(keywords, city):
             adname = poi['adname']  # 区县
             adname = adname if len(adname) else None
 
-            name = poi['name']  # 店铺名
+            name = poi.get('name') if poi.get('name') else '暂无数据'  # 店铺名
             name = name if len(name) else None
 
-            address = poi['address']  # 地址
-            address = address if len(address) else None
+            address = poi.get('address')  # 地址
+            address = address if address else '暂无数据'
 
-            location = poi['location']  # 坐标
-            location = location if len(location) else None
-
-            tel = poi['tel']  # 电话
-            tel = tel if len(tel) else None
+            location = poi.get('location')  # 坐标
+            location = location if location else None
 
             print(f'省份:{pname} 市:{cityname} 区县:{adname} 店铺名:{name} 地址:{address} 坐标:{location} 电话:{tel}')
             data.append([pname, cityname, adname, name, address, location, tel])
@@ -62,6 +63,7 @@ def spider(keywords, city):
 def scv_data(data, city):
     """保存为csv"""
     city = city + '消防设备门店信息'
+    print(city)
     with open(f"{city}.csv", "a+", encoding='utf-8', newline="") as f:
         k = csv.writer(f, delimiter=',')
         with open(f"{city}.csv", "r", encoding='utf-8', newline="") as f1:
@@ -77,6 +79,9 @@ def scv_data(data, city):
 
 
 if __name__ == '__main__':
-    keywords = input('关键词：')
-    city = input('区域：')
-    spider(keywords, city)
+    # keywords = input('关键词：')
+    keywords = '消防器材'
+    # city = input('区域：')
+    citys = ['郑州', '西宁', '合肥', '哈尔滨', '长春', '沈阳']
+    for city in citys:
+        spider(keywords, city)
